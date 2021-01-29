@@ -53,6 +53,14 @@
 </div>
 <script>
 	var x=document.getElementById('notes');
+	var notes = new Array('Calculus','calculus.pdf','Complex algebra','complex_algebra.pdf','Differential equations','differential_equations.pdf','Modeling and idenitification of systems','modeling_and_identification_of_systems.pdf','Multivariable control systems','multivariable_control_systems.pdf','Optimal control systems','optimal_control_systems.pdf');
+	var dir = "files/resources/notes/";
+	var y='';
+	for (i=0;i<notes.length; i=i+2)
+	{
+		y=y+"<a class = 'itemize' href='"+dir+notes[i+1]+ "'>" +notes[i]+"</a><br>";
+	}
+	x.innerHTML=y;
 </script>
 <hr>
 
