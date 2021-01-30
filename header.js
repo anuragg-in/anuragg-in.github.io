@@ -75,3 +75,4 @@ x2.innerHTML = '<div class = "sub-column">\
 	</div>\
 </div></div>\
 </div>';
+document.title = 'Anurag Gupta | Electrical and Computer Engineering | Cornell University | Systems and Control Engineering | Electrical Engineering | Indian Insitute of Technology, Bombay';
