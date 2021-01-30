@@ -25,6 +25,26 @@ y=y+'</ul>\
       <a href = "resources.html">Resources</a>\
       </li>\
       <li class = "dropdown-button-1">\
+      <a href = "hobbies.html">Hobbies</a>\
+        <ul class = "dropdown-content-1">\
+          <li class = "dropdown-button-2">\
+            <a href = "photography.html">Photography</a>\
+            </li>\
+            <li class = "dropdown-button-2 different">\
+            <a href = "sketching.html">Sketching</a>\
+          </li>\
+          <li class = "dropdown-button-2">\
+            <a href = "books.html">Reading books</a>\
+          </li>\
+          <li class = "dropdown-button-2 different">\
+            <a href = "#">Musical instruments</a>\
+          </li>\
+          <li class = "dropdown-button-2">\
+            <a href = "coins.html">Collecting coins</a>\
+          </li>\
+        </ul>\
+      </li>\
+      <li class = "dropdown-button-1">\
       <a href = "contact.html">Contact</a>\
       </li>\
     </ul>\

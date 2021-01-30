@@ -62,16 +62,19 @@ x.innerHTML=y;
 	<tr>
 		<th>Title</th><th>Author</th>
 	</tr>
-	<?php
-		$file=fopen('goodreads_library_export.csv','r') or die('Error: File not found');
-		while(!feof($file))
-		{
-			$line = fgetcsv($file);
-			if($line[0]!="")
-				echo "<tr><td>{$line[1]}</td><td>{$line[2]}</td></tr>";
-		}
-	?>
+	<tbody id="recommended_books">
+	</tbody>
 </table>
+<script>
+var x=document.getElementById('recommended_books');
+var y='';
+var books = new Array("A man called Ove","Fredrik Backman","Gone with the wind","Mitchell Margaret","Lincoln in the bardo","George Saunders","1984","George Orwell","And every morning the way home gets longer and longer","Fredrik Backman","Black flags: the rise of ISIS","Joby Warrick","Why God won't go away","Andrew B. Newberg","The God of small things","Arundhati Roy","Sideways stories from wayside school","Louis Sachar","The witch of Portobello","Paulo Coelho","Atonement","Ian McEwan","And the mountains echoed","Khaled Hosseni","When I'm gone","Emily Bleeker","The elephant whisperer","Anthony Lawrence");
+for (i=0;i<books.length;i=i+2)
+{
+	y=y+"<tr><td>"+books[i]+"</td><td>"+books[i+1]+"</td></tr>";
+}
+x.innerHTML=y;
+</script>
 <br>
 <div class="text">
 	For more, visit my <a href="https://www.goodreads.com/user/show/45523948-anurag">goodreads' profile page.</a>

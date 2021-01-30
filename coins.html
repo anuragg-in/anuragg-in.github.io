@@ -38,23 +38,19 @@
 </style>
 
 <div class = "heading">Special edition coins</div>
-<div class = "text">
-	<?php
-	$dir = "images/coins/";
-	if(is_dir($dir))
-	{
-		$a = scandir($dir);
-		for($i=0;$i<sizeof($a);$i++)
-		{
-			$file = $a[$i];
-			if(strcmp($file[0],'.') != false)
-			{
-	    		echo "<img class = 'image-border float-image' src = '".$dir. $file . "'>";
-	    	}
-		}
-	}
-	?>
+<div class = "text" id="coins">
 </div>
+<script>
+var dir = "images/coins/";
+var x=document.getElementById('coins');
+var y='';
+var coins=new Array('50th_anniversary_of_united_nations.jpg','75_years_of_dandi_march.jpg','150th_birth_anniversary_of_motilal_nehru.jpg','chatrapati_shivaji_1999.jpg','civil_aviation_100_years.jpg','comptroller_and_auditor_general_of_india.jpg','dr_rajendra_prasad_125th_birth_anniversary.jpg','globalizing_indian_agriculture.jpg','indian_council_of_medical_research.jpg','k_kamraj.jpg','lok_nayak_jay_prakash_narayan.jpg','mother_teresa_birth_centenary.jpg','mother-s_health_is_child-s_health.jpg','national_integration.jpg','rbi_platinum_jubilee.jpg','reserve_bank_of_india_platinum_jubilee','sardar_vallabhai_patel.jpg','shaheed_bhagat_singh.jpg','shri_mata_vaishno_devi_shrine_board.jpg','university_of_mysore_centenary_celebration.jpg');
+for (i=0;i<coins.length;i++)
+{
+	y=y+"<img class = 'image-border float-image' src = '"+dir+coins[i]+ "'>";
+}
+x.innerHTML=y;
+</script>
 <!-- BOTTOM.HTML BEGINS -->
 </div>
 </div><div class = "col-2-wrap"><div class = "col-2" id="news">
