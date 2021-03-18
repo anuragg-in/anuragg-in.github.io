@@ -59,8 +59,11 @@ x2.innerHTML = '<div class = "sub-column">\
 	<div class = "heading">&#10219 Current activities</div>\
 	<div class = "text unjustify">\
 	<ul>\
-		<li><a class="link" href= "https://calendar.google.com/calendar/embed?src=37sg0gj4utv7vbq0lcpi1p28vs%40group.calendar.google.com&ctz=Asia%2FCalcutta">Time table</a></li>\
-		<li><a class="link" href="https://www.youtube.com/watch?v=SoDq9GQvNAE&list=PLrLf58z7_B2YXrVVW-VpH9E1gorevFOSn&index=6">Shape formation using Kilobots</a></li>\
+		<!--<li><a class="link" href= "https://calendar.google.com/calendar/embed?src=37sg0gj4utv7vbq0lcpi1p28vs%40group.calendar.google.com&ctz=Asia%2FCalcutta">Time table</a></li>\
+		<li><a class="link" href="https://www.youtube.com/watch?v=SoDq9GQvNAE&list=PLrLf58z7_B2YXrVVW-VpH9E1gorevFOSn&index=6">Shape formation using Kilobots</a></li>-->\
+    <li>Game theory</li>\
+    <li>Economics</li>\
+    <li>Measure theory</li>\
 	</ul>\
 	</div>\
 </div></div>\
