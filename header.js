@@ -71,7 +71,7 @@ x2.innerHTML = '<div class = "sub-column">\
 <div class = "sub-col-2">\
 	<div class = "heading">&#10219 Find me</div>\
 	<div class = "text unjustify">\
-	Location: Ithaca, New York, U.S.<br>\
+	Location: Lucknow, India<br>\
 	Email ID: anuragg.in@gmail.com<br>\
 	Homepage: <a href = "http://www.anuragg.in">www.anuragg.in</a><br>\
 	</div>\
