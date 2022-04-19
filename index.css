@@ -13,6 +13,10 @@ hr, .hline
 	width: 100%;
 	border-width: 1px;
 }
+img.email
+{
+	vertical-align: middle;
+}
 .header ul
 {
 	list-style-type: none;
