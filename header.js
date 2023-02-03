@@ -72,7 +72,7 @@ x2.innerHTML = '<div class = "sub-column">\
 	<div class = "heading">&#10219 Find me</div>\
 	<div class = "text unjustify">\
 	Location: Ithaca, New York<br>\
-	Email ID: anuragg.in@gmail.com<br>\
+	Email ID: A@B.com, where A=anuragg.in and B=gmail<br>\
 	Homepage: <a href = "http://www.anuragg.in">www.anuragg.in</a><br>\
 	</div>\
 </div></div>\
