@@ -61,9 +61,9 @@ x2.innerHTML = '<div class = "sub-column">\
 	<ul>\
 		<!--<li><a class="link" href= "https://calendar.google.com/calendar/embed?src=37sg0gj4utv7vbq0lcpi1p28vs%40group.calendar.google.com&ctz=Asia%2FCalcutta">Time table</a></li>\
 		<li><a class="link" href="https://www.youtube.com/watch?v=SoDq9GQvNAE&list=PLrLf58z7_B2YXrVVW-VpH9E1gorevFOSn&index=6">Shape formation using Kilobots</a></li>-->\
-    <li>Stochastic processes</li>\
-    <li>Microeconomic theory</li>\
-    <li>Game theory</li>\
+    <li>Distributed Ledgers</li>\
+    <li>Economics</li>\
+    <li>Learning theory</li>\
 	</ul>\
 	</div>\
 </div></div>\
