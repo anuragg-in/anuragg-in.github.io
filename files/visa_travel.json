@@ -1,0 +1,114 @@
+[
+  {
+    "country": "Albania",
+    "duration": "90 days in 180 days",
+    "fees": "0",
+    "pr": "USA, UK, Schengen, UAE",
+    "visa": "USA, UK, Schengen",
+    "source": "https://punetejashtme.gov.al/en/regjimi-i-vizave-per-te-huajt/"
+  },
+  {
+    "country": "Belize",
+    "duration": "30 days",
+    "fees": "0",
+    "pr": "USA",
+    "visa": "USA",
+    "source": "https://www.belizeembassyusa.mfa.gov.bz/visa-application-requirements"
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "duration": "30 days",
+    "fees": "0",
+    "pr": "USA, Schengen",
+    "visa": "USA, Schengen",
+    "source": "https://www.bihembassyin.com/consular-affairs.php"
+  },
+  {
+    "country": "Costa Rica",
+    "fees": "0",
+    "duration": "30 days",
+    "pr": "USA, Canada, UK, Schengen",
+    "visa": "USA, Canada, UK, Schengen",
+    "source": "http://www.costarica-embassy.org/index.php?q=visaconsular.html"
+  },
+  {
+    "country": "Georgia",
+    "duration": "90 days in 180 days",
+    "fees": "0",
+    "pr": "USA, UK, Canada, Schengen, UAE, South Korea, Saudi Arabia, Qatar, Oman, Australia, New Zealand, Japan, Kuwait, Israel, Bahrain, British Overseas Territories, British dependent territories",
+    "visa": "USA, UK, Canada, Schengen, UAE, South Korea, Saudi Arabia, Qatar, Oman, Australia, New Zealand, Japan, Kuwait, Israel, Bahrain, British Overseas Territories, British dependent territories",
+    "source": "https://www.geoconsul.gov.ge/HtmlPage/Html/View?id=206&lang=Eng"
+  },
+  {
+    "country": "Mexico",
+    "duration": "180 days",
+    "fees": "0",
+    "pr": "Canada, USA, Japan, Schengen, Australia, New Zealand, Ireland",
+    "visa": "Canada, USA, Japan, Schengen, Australia, New Zealand, Ireland",
+    "source": "https://www.visit-montenegro.com/montenegro-visa-regimes/"
+  },
+  {
+    "country": "Montenegro",
+    "duration": "30 days",
+    "fees": "0",
+    "pr": "Japan, Canada, USA, Japan, UK, Schengen, Chile, Columbia, Peru",
+    "visa": "Canada, USA, Japan, UK, Schengen",
+    "source": "https://www.inm.gob.mx/gobmx/word/index.php/paises-requieren-visa-para-mexico/"
+  },
+  {
+    "country": "North Macedonia",
+    "duration": "15",
+    "fees": "0",
+    "pr": "Schengen",
+    "visa": "Canada, USA, UK, Schengen",
+    "source": "https://www.mfa.gov.mk/en/page/432/visa-requirements-for-entering-the-republic-of-north-macedonia"
+  },
+  {
+    "country": "Peru",
+    "duration": "180 days in 365 days (India, China)",
+    "fees": "0",
+    "pr": "USA, Canada, UK, Australia, Schengen",
+    "visa": "USA, Canada, UK, Australia, Schengen",
+    "source": "https://www.gob.pe/institucion/rree/informes-publicaciones/279522-convenios-de-visas-para-ciudadanos-extranjeros"
+  },
+  {
+    "country": "Philipines",
+    "duration": "14 (India), 7 (China)",
+    "fees": "0",
+    "pr": "Canada, USA, UK, Schengen, Japan, Singapore, Australia",
+    "visa": "Canada, USA, UK, Schengen, Japan, Singapore, Australia",
+    "source": "https://www.philippine-embassy.org.sg/consular/visa/general-information/"
+  },
+  {
+    "country": "Serbia",
+    "duration": "90 days",
+    "fees": "0",
+    "pr": "USA, Schengen",
+    "visa": "USA, UK, Schengen",
+    "source": "https://www.mfa.gov.rs/en/citizens/travel-serbia/visa-requirements"
+  },
+  {
+    "country": "Singapore",
+    "duration": "96 hours (India, China)",
+    "fees": "0",
+    "pr": "USA, Canada, Germany, Japan, New Zealand, Switzerland, UK, Australia",
+    "visa": "USA, Canada, Germany, Japan, New Zealand, Switzerland, UK, Australia",
+    "source": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa-free-transit-facility"
+  },
+  {
+    "country": "Taiwan",
+    "duration": "14 days with eTA (Cambodia, India, Indonesia, Laos, Myanmar, Vietnam)",
+    "fees": "0",
+    "pr": "CHECK",
+    "visa": "CHECK",
+    "source": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa-free-transit-facility"
+  },
+  {
+    "country": "United Kingdom",
+    "duration": "48 hours",
+    "fees": "0",
+    "pr": "USA, Canada, Schengen, Australia, New Zealand",
+    "visa": "USA, Canada, Schengen, Australia, New Zealand, Ireland",
+    "source": "https://www.gov.uk/check-uk-visa/y/india/transit/somewhere_else/yes"
+  }
+]

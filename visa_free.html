@@ -24,7 +24,7 @@
 			<div class = "column-2">
 				<div class = "col-1-wrap">
 				<div class = "col-1">
-					<svg width="800" height="400"></svg>
+					<svg width="1000" height="900"></svg>
           <!-- TOP.HTML ENDS -->
 
 
@@ -55,20 +55,28 @@ The presentation also discusses other models with different objective functions,
 
     // Create a projection for the map
     const projection = d3.geoMercator()
-        .scale(150)
+        .scale(300)
         .translate([width / 2, height / 2]);
 
     const path = d3.geoPath().projection(projection);
-
-    // Load world map data from a GeoJSON file
-    d3.json('world.json').then(function(world) {
-        svg.selectAll('path')
-            .data(world.features)
-            .enter().append('path')
-            .attr('d', path)
-            .attr('stroke', 'black')
-            .attr('fill', 'lightgray');
-    });
+		const countriesToColor = ['United States of America', 'Georgia', 'Mexico', 'Albania', 'North Macedonia', 'Serbia', 'Bosnia and Herzegovina', ' Montenegro'];
+		// Load world map data from a GeoJSON file
+        d3.json('files/world.json').then(function(world) {
+            // Color the United States (replace 'USA' with the country code or name you want to color)
+            svg.selectAll('path')
+                .data(world.features)
+                .enter().append('path')
+                .attr('d', path)
+                .attr('stroke', 'black')
+                .attr('fill', function(d) {
+										const countryName = d.properties.name_en;
+                    if (countriesToColor.includes(countryName)) {
+                        return 'green'; // Color the United States in red
+                    } else {
+                        return 'lightgray'; // Color other countries in gray
+                    }
+                });
+        });
 </script>
 
 </body>
