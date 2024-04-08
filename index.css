@@ -9,7 +9,7 @@ body
 }
 hr, .hline
 {
-	border: solid #0aa;
+	border: solid #000;
 	width: 100%;
 	border-width: 1px;
 }
@@ -274,7 +274,7 @@ body, .col-2, .col-2-wrap
 }
 .dropdown-content-0
 {
-	background: #0ca;
+	background: #000;
 	border-bottom: 2px dashed;
 }
 .dropdown-button-1
@@ -290,7 +290,7 @@ body, .col-2, .col-2-wrap
 	font-size: 1.35em;
 	min-width:4.5em;
 	padding: 0.6em;
-	color: #222;
+	color: #fff;
 }
 .dropdown-button-1>a
 {

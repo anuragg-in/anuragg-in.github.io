@@ -59,16 +59,10 @@ var x2=document.getElementById('news');
 x2.innerHTML = '<div class = "sub-column">\
 <div class = "sub-col-1-wrap">\
 <div class = "sub-col-1">\
-	<div class = "heading">&#10219 Current activities</div>\
+	<div class = "heading">&#10219 <a class = "link" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1rkQF3DqO1U4zFL-xGdc_sYeYteCyZ-KvIkCTqaYemyfC0rJMcTzgBEb27a6k9gDN7O1W6k55e">Schedule a meeting</a></div>\
 	<div class = "text unjustify">\
-	<ul>\
-		<!--<li><a class="link" href= "https://calendar.google.com/calendar/embed?src=37sg0gj4utv7vbq0lcpi1p28vs%40group.calendar.google.com&ctz=Asia%2FCalcutta">Time table</a></li>\
-		<li><a class="link" href="https://www.youtube.com/watch?v=SoDq9GQvNAE&list=PLrLf58z7_B2YXrVVW-VpH9E1gorevFOSn&index=6">Shape formation using Kilobots</a></li>-->\
-    <li>Distributed Ledgers</li>\
-    <li>Economics</li>\
-    <li>Learning theory</li>\
-	</ul>\
-	</div>\
+  If you want to talk with me about anything,<br> use the link above to schedule a call.\
+  </div>\
 </div></div>\
 <div class = "sub-col-2-wrap">\
 <div class = "sub-col-2">\
