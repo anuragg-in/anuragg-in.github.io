@@ -8,6 +8,14 @@
 		</title>
 		<link href="index.css" rel="stylesheet" />
         <link rel="icon" href="images/icon.png"/>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	  <style>
+	    .map {
+	      height: 300px;
+	      width: 100%;
+	    }
+	  </style>
 		<style>
 			.col-1 .heading::before
 			{
@@ -26,6 +34,49 @@
 				margin:1em auto 1em auto;
 			}
 		</style>
+		<style>
+        .container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .slides {
+            display: none;
+            width: 100%;
+        }
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .thumbnail {
+            cursor: pointer;
+            width: 60px;
+            margin: 0 5px;
+        }
+        .left, .right {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            user-select: none;
+            transition: 0.6s ease;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            right: 0;
+        }
+        .left:hover, .right:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+    </style>
 	</head>
 	<body>
     <div class = "header" id = "header">
@@ -50,14 +101,14 @@
 	<b>27-May-2024 to 28-May-2024:</b> Rest time in Las Vegas.<br>
 </div> -->
 <hr>
-<div class = "title">Trip to famous national parks in United States</div>
+<div class = "title">Trip to famous national parks in United States (Car camping)</div>
 <div class = "vertical-space"></div><hr>
-
 <div class = "heading">Avoid monotonicity</div>
 <div class = "text">National parks in vicinity often have similar landscapes, so it's best to spread out your visits to keep things interesting.<br>
-
 <strong>Week 1</strong>: Starting from Las Vegas, I explored <a class="link" href="https://www.redrockcanyonlv.org/">Red Rock Canyon</a>, <a class="link" href="https://www.nps.gov/deva/index.htm">Death Valley, <a class="link" href="https://www.nps.gov/zion/index.htm">Zion</a>, <a class="link" href="https://www.nps.gov/brca/index.htm">Bryce Canyon</a>, <a class="link" href="https://www.blm.gov/programs/national-conservation-lands/utah/grand-staircase-escalante-national-monument">Grand Staircase</a>, <a class="link" href="https://www.nps.gov/glca/index.htm">Glen canyon</a>, <a class="link" href="https://cityofpage.org/departments/horseshoe-bend/">Horseshoe bend</a> and the <a class="link" href="https://www.nps.gov/grca/index.htm">Grand Canyon</a>.<br></div>
-
+<br>
+<div class = "image-border map" id="map1"></div>
+<div class ="caption">Locations for week 1</div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/red_canyon.jpg"></img><div class = "caption">Viewpoint on the scenic route of Red rock canyon national conservation area.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/death_valley.jpg"></img><div class = "caption">Zabriskie point in Death valley.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/zion.jpg"></img><div class = "caption">Observation point in Zion national park.</div></div>
@@ -69,20 +120,104 @@
 
 <div class = "text">
 <strong>Week 2</strong>: Starting from Sacramento, I visited <a class="link" href="https://www.nps.gov/yose/index.htm">Yosemite</a>, <a class="link" href="https://www.nps.gov/seki/index.htm">Sequoia</a>, <a class="link" href="https://www.nps.gov/seki/index.htm">Kings Canyon</a>, <a class="link" href="https://www.nps.gov/pinn/index.htm">Pinnacles</a>, Santa Barbara, <a class="link" href="https://www.blm.gov/programs/national-conservation-lands/california/california-coastal">California Coastal National Monuments</a>, and <a class="link" href="https://www.nps.gov/muwo/index.htm">Muir Woods</a>.<br></div>
-
-<div class = "image"><img class="image-border" src = "images/travel/usa/mist_trail.jpg"></img><div class = "caption">Mist trail in Yosemite national park.</div></div>
+<br>
+<div class = "image-border map" id="map2"></div>
+<div class ="caption">Locations for week 2</div>
+<div class = "image"><img class="image-border" src = "images/travel/usa/half_dome.jpg"></img><div class = "caption">Half dome in Yosemite national park.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/sequoia.jpg"></img><div class = "caption">A fallen tree in Sequoia national park.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/seal.jpg"></img><div class = "caption">Seals on one of the California coastal national monuments.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/pinnacle.jpg"></img><div class = "caption">Pinnacle national park.</div></div>
+<div class = "image"><img class="image-border" src = "images/travel/usa/san_francisco.jpg"></img><div class = "caption">Short detour to San Franscisco.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/muir_woods.jpg"></img><div class = "caption">Muir woods.</div></div>
 
 <div class = "text">
 
 <strong>Week 3</strong>: Starting from Salt Lake City, I toured <a class="link" href="https://www.nps.gov/yell/index.htm">Yellowstone</a>, <a class="link" href="https://www.nps.gov/grte/index.htm">Grand Teton</a>, <a class="link" href="https://www.nps.gov/arch/index.htm">Arches</a>, and <a class="link" href="https://www.nps.gov/cany/index.htm">Canyonlands</a>.</div>
+<br>
+<div class = "image-border map" id="map3"></div>
+<div class ="caption">Locations for week 3</div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/yellowstone.jpg"></img><div class = "caption">Grand prismatic spring in Yellowstone national park.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/grand_teton.jpg"></img><div class = "caption">Grand Teton national park.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/landscape_arch.jpg"></img><div class = "caption">Landscape arch in Arches national park.</div></div>
 <div class = "image"><img class="image-border" src = "images/travel/usa/canyonland.jpg"></img><div class = "caption">Canyonlands national park.</div></div>
+
+<div class = "separator"></div>
+
+<div class = "heading">Photo gallery</div>
+
+<div class="container" id="gallery1">
+    <img class="slides image-border" src="images/travel/usa/death_valley_4.jpg" alt="Image1">
+    <!-- <img class="slides image-border" src="images/travel/usa/death_valley_2.jpg" alt="Image2">
+    <img class="slides image-border" src="images/travel/usa/death_valley_3.jpg" alt="Image3"> -->
+		<img class="slides image-border" src="images/travel/usa/death_valley_1.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/zion_1.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/zion_2.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/bryce_1.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/bryce_2.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/glen_1.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/toadstool_1.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/grand_canyon_1.jpg" alt="Image4">
+		<img class="slides image-border" src="images/travel/usa/grand_canyon_2.jpg" alt="Image4">
+
+    <a class="left" onclick="changeSlide(-1, 'gallery1')">&#10094;</a>
+    <a class="right" onclick="changeSlide(1, 'gallery1')">&#10095;</a>
+
+    <!-- <div class="thumbnails">
+        <img class="thumbnail" src="images/travel/usa/death_valley_1.jpg" onclick="currentSlide(1, 'gallery1')" alt="Thumbnail 1">
+        <img class="thumbnail" src="images/travel/usa/death_valley_2.jpg" onclick="currentSlide(2, 'gallery1')" alt="Thumbnail 2">
+        <img class="thumbnail" src="images/travel/usa/death_valley_3.jpg" onclick="currentSlide(3, 'gallery1')" alt="Thumbnail 3">
+				<img class="thumbnail" src="images/travel/usa/death_valley_4.jpg" onclick="currentSlide(4, 'gallery1')" alt="Thumbnail 3">
+				<img class="thumbnail" src="images/travel/usa/zion_1.jpg" onclick="currentSlide(5, 'gallery1')" alt="Thumbnail 1">
+        <img class="thumbnail" src="images/travel/usa/zion_2.jpg" onclick="currentSlide(6, 'gallery1')" alt="Thumbnail 2">
+        <img class="thumbnail" src="images/travel/usa/bryce_1.jpg" onclick="currentSlide(7, 'gallery1')" alt="Thumbnail 3">
+				<img class="thumbnail" src="images/travel/usa/bryce_2.jpg" onclick="currentSlide(8, 'gallery1')" alt="Thumbnail 3">
+    </div> -->
+		<div class="caption">Photo gallery: Week 1</div>
+</div>
+
+<div class="container" id="gallery2">
+    <img class="slides image-border" src="images/travel/usa/yosemite_1.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yosemite_2.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yosemite_3.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yosemite_4.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yosemite_5.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/sequoia_1.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/sequoia_2.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/sequoia_3.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/pinnacle_1.jpg" alt="Image">
+
+    <a class="left" onclick="changeSlide(-1, 'gallery2')">&#10094;</a>
+    <a class="right" onclick="changeSlide(1, 'gallery2')">&#10095;</a>
+
+    <!-- <div class="thumbnails">
+        <img class="thumbnail" src="images/travel/usa/red_canyon.jpg" onclick="currentSlide(1, 'gallery2')" alt="Thumbnail 4">
+        <img class="thumbnail" src="images/travel/usa/toadstool.jpg" onclick="currentSlide(2, 'gallery2')" alt="Thumbnail 5">
+        <img class="thumbnail" src="images/travel/usa/bryce_canyon.jpg" onclick="currentSlide(3, 'gallery2')" alt="Thumbnail 6">
+    </div> -->
+		<div class="caption">Photo gallery: Week 2</div>
+</div>
+
+<div class="container" id="gallery3">
+    <img class="slides image-border" src="images/travel/usa/yellowstone_1.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yellowstone_2.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yellowstone_3.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yellowstone_4.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/yellowstone_5.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/grand_teton_1.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/arches_1.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/arches_2.jpg" alt="Image">
+		<img class="slides image-border" src="images/travel/usa/arches_3.jpg" alt="Image">
+
+    <a class="left" onclick="changeSlide(-1, 'gallery3')">&#10094;</a>
+    <a class="right" onclick="changeSlide(1, 'gallery3')">&#10095;</a>
+
+    <!-- <div class="thumbnails">
+        <img class="thumbnail" src="images/travel/usa/red_canyon.jpg" onclick="currentSlide(1, 'gallery2')" alt="Thumbnail 4">
+        <img class="thumbnail" src="images/travel/usa/toadstool.jpg" onclick="currentSlide(2, 'gallery2')" alt="Thumbnail 5">
+        <img class="thumbnail" src="images/travel/usa/bryce_canyon.jpg" onclick="currentSlide(3, 'gallery2')" alt="Thumbnail 6">
+    </div> -->
+		<div class="caption">Photo gallery: Week 3</div>
+</div>
 
 <div class = "separator"></div>
 
@@ -131,5 +266,117 @@ The presentation also discusses other models with different objective functions,
 </div>
 </div>
 <script src="header.js"></script>
+<script>
+		const galleries = {
+				'gallery1': 1,
+				'gallery2': 1,
+				'gallery3': 1
+		};
+
+    function changeSlide(n, galleryId) {
+        showSlides(galleries[galleryId] += n, galleryId);
+    }
+
+    function currentSlide(n, galleryId) {
+        showSlides(galleries[galleryId] = n, galleryId);
+    }
+
+    function showSlides(n, galleryId) {
+        let i;
+        const container = document.getElementById(galleryId);
+        const slides = container.getElementsByClassName("slides");
+        // const thumbnails = container.getElementsByClassName("thumbnail");
+
+        if (!galleries[galleryId]) galleries[galleryId] = 1;
+        if (n > slides.length) galleries[galleryId] = 1;
+        if (n < 1) galleries[galleryId] = slides.length;
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        // for (i = 0; i < thumbnails.length; i++) {
+        //     thumbnails[i].className = thumbnails[i].className.replace(" active", "");
+        // }
+        slides[galleries[galleryId] - 1].style.display = "block";
+        // thumbnails[galleries[galleryId] - 1].className += " active";
+    }
+
+    window.onload = function() {
+        const galleryIds = Object.keys(galleries);
+				// console.log(galleryIds);
+        for (let id of galleryIds) {
+            showSlides(galleries[id], id);
+        }
+    };
+</script>
+<script>
+    var map = L.map('map1').setView([37.146, -113.758], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // var marker = L.marker([36.452,-117.120]).addTo(map);
+    // marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+		var markers = [
+      { coords: [36.452,-117.120], popup: "Death valley" },
+      { coords: [37.3265,-113.0047], popup: "Zion" },
+			{ coords: [36.1684,-115.1498], popup: "Las Vegas" },
+			{ coords: [37.5119,-111.4975], popup: "Grand staircase" },
+			{ coords: [36.3107,-112.2981], popup: "Grand canyon" },
+			{ coords: [36.8804530, -111.5161335], popup: "Horseshoe bend" },
+      { coords: [37.5734,-112.1848], popup: "Bryce canyon" }
+    ];
+
+    markers.forEach(function(marker) {
+      var m = L.marker(marker.coords).addTo(map);
+      m.bindPopup(marker.popup);
+    });
+  </script>
+	<script>
+	    var map = L.map('map2').setView([36.523,-119.828], 6);
+
+	    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	    }).addTo(map);
+
+	    // var marker = L.marker([36.452,-117.120]).addTo(map);
+	    // marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+			var markers = [
+	      { coords: [37.8402,-119.5107], popup: "Yosemite" },
+	      { coords: [36.4964,-118.5548], popup: "Sequoia" },
+				{ coords: [37.7740,-122.4193], popup: "San Francisco" },				
+				{ coords: [34.4211,-119.7015], popup: "Santa Barbara" },
+				{ coords: [37.1319,-122.3252], popup: "California coastal national monument" },
+				{ coords: [37.8963,-122.5797], popup: "Muir woods national monument" }
+	    ];
+
+	    markers.forEach(function(marker) {
+	      var m = L.marker(marker.coords).addTo(map);
+	      m.bindPopup(marker.popup);
+	    });
+	  </script>
+		<script>
+		    var map = L.map('map3').setView([42.22,-110.402], 5);
+
+		    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		    }).addTo(map);
+
+		    // var marker = L.marker([36.452,-117.120]).addTo(map);
+		    // marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+				var markers = [
+		      { coords: [44.6198,-110.5499], popup: "Yellowstone" },
+		      { coords: [43.8107,-110.6296], popup: "Grand Teton" },
+					{ coords: [40.7618,-111.9012], popup: "Salt lake city" },
+					{ coords: [38.7252,-109.5612], popup: "Arches" },
+					{ coords: [38.16664,-109.98400], popup: "Canyonlands" }
+		    ];
+
+		    markers.forEach(function(marker) {
+		      var m = L.marker(marker.coords).addTo(map);
+		      m.bindPopup(marker.popup);
+		    });
+		  </script>
 </body>
 </html>
