@@ -154,6 +154,10 @@ a {
 {
   color: #25a;
 }
+th, td
+{
+  padding-right: 10px;
+}
 figure
 {
   margin-left: 0;
