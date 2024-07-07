@@ -343,7 +343,7 @@ Recommended hikes in Arches national park: Delicate arch (moderate), Double arch
          }
      };
  </script>
- <script>     
+ <script>
      var map = L.map('map1', {
      center: [37.146, -113.758],
      zoom: 7,
@@ -468,8 +468,16 @@ Recommended hikes in Arches national park: Delicate arch (moderate), Double arch
  		    });
  		  </script>
  			<script>
- 			    var map = L.map('map-overall').setView([40.72,-112.402], 5);
-
+          var map = L.map('map-overall', {
+      center: [40.72,-112.402],
+      zoom: 5,
+      zoomControl: true,          // Disable zoom control buttons
+      scrollWheelZoom: false,      // Disable scroll wheel zoom
+      doubleClickZoom: false,      // Disable double click zoom
+      boxZoom: false,              // Disable box zoom
+      keyboard: false,             // Disable keyboard zoom
+      dragging: true          // Optional: Disable dragging
+    });
  			    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  			      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
  			    }).addTo(map);
