@@ -154,6 +154,11 @@ a {
 {
   color: #25a;
 }
+figcaption
+{
+  color: #050;
+  font-style:italic;
+}
 a:hover {
     text-decoration: underline;
 }
