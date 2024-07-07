@@ -343,9 +343,17 @@ Recommended hikes in Arches national park: Delicate arch (moderate), Double arch
          }
      };
  </script>
- <script>
-     var map = L.map('map1').setView([37.146, -113.758], 7);
-
+ <script>     
+     var map = L.map('map1', {
+     center: [37.146, -113.758],
+     zoom: 7,
+     zoomControl: true,          // Disable zoom control buttons
+     scrollWheelZoom: false,      // Disable scroll wheel zoom
+     doubleClickZoom: false,      // Disable double click zoom
+     boxZoom: false,              // Disable box zoom
+     keyboard: false,             // Disable keyboard zoom
+     dragging: true              // Optional: Disable dragging
+     });
      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
      }).addTo(map);
@@ -377,8 +385,17 @@ Recommended hikes in Arches national park: Delicate arch (moderate), Double arch
      });
    </script>
  	<script>
- 	    var map = L.map('map2').setView([36.523,-119.828], 6);
-
+ 	    // var map = L.map('map2').setView([36.523,-119.828], 6);
+      var map = L.map('map2', {
+      center: [36.523,-119.828],
+      zoom: 6,
+      zoomControl: true,          // Disable zoom control buttons
+      scrollWheelZoom: false,      // Disable scroll wheel zoom
+      doubleClickZoom: false,      // Disable double click zoom
+      boxZoom: false,              // Disable box zoom
+      keyboard: false,             // Disable keyboard zoom
+      dragging: true              // Optional: Disable dragging
+      });
  	    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  	      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
  	    }).addTo(map);
@@ -410,7 +427,17 @@ Recommended hikes in Arches national park: Delicate arch (moderate), Double arch
  	    });
  	  </script>
  		<script>
- 		    var map = L.map('map3').setView([42.22,-110.402], 5);
+ 		    // var map = L.map('map3').setView([42.22,-110.402], 5);
+        var map = L.map('map3', {
+    center: [42.22,-110.402],
+    zoom: 5,
+    zoomControl: true,          // Disable zoom control buttons
+    scrollWheelZoom: false,      // Disable scroll wheel zoom
+    doubleClickZoom: false,      // Disable double click zoom
+    boxZoom: false,              // Disable box zoom
+    keyboard: false,             // Disable keyboard zoom
+    dragging: true          // Optional: Disable dragging
+  });
 
  		    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  		      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
