@@ -150,7 +150,10 @@ a {
     text-decoration: none;
     color: #26abe2;
 }
-
+.docs-content a
+{
+  color: #25a;
+}
 a:hover {
     text-decoration: underline;
 }
