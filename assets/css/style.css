@@ -154,6 +154,11 @@ a {
 {
   color: #25a;
 }
+figure
+{
+  margin-left: 0;
+  margin-right: 0;
+}
 figcaption
 {
   color: #050;
