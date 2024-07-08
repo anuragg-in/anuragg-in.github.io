@@ -154,6 +154,18 @@ a {
 {
   color: #25a;
 }
+.map-link {
+  display:inline;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.map-logo {
+  width: 13px;
+  height: 16px;
+  margin-right: 8px;
+  margin-left: 2px;
+}
 th, td
 {
   padding-right: 10px;
