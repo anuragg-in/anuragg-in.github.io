@@ -368,7 +368,7 @@ nav #menu-toggle {
 
 
 /* Content Styles */
-section { padding: 1em 0 3em; text-align: center; }
+section { padding: 1em 0.5em 3em; text-align: left; }
 section.vibrant { background: #222; color: #fff; }
 section.vibrant h4{
   line-height: 2;
@@ -470,7 +470,12 @@ input:focus {
 @media only screen and (min-width: 400px) {
 
 }
-
+@media only screen and (max-width: 960px) {
+  .docs-nav
+  {
+    display:none;
+  }
+}
 @media only screen and (min-width: 600px) {
 
 }
