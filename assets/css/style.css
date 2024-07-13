@@ -36,6 +36,7 @@ iframe {
 
 img {
     height:auto;
+    border-radius: 10px;
 }
 
 .btn {background:#135571;color:#fff;
