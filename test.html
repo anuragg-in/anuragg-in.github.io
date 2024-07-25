@@ -3,125 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiple Photo Galleries</title>
+    <title>Responsive Multi-Column Layout</title>
     <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
         .container {
-            position: relative;
-            max-width: 600px;
-            margin: auto;
-            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
         }
-        .slides {
-            display: none;
-            width: 100%;
+        .box {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
         }
-        .thumbnails {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
+        @media (min-width: 600px) and (max-width: 899px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
         }
-        .thumbnail {
-            cursor: pointer;
-            width: 60px;
-            margin: 0 5px;
-        }
-        .left, .right {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            user-select: none;
-            transition: 0.6s ease;
-        }
-        .left {
-            left: 0;
-        }
-        .right {
-            right: 0;
-        }
-        .left:hover, .right:hover {
-            background-color: rgba(0,0,0,0.8);
+        @media (min-width: 900px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
     </style>
 </head>
 <body>
-
-<div class="container" id="gallery1">
-    <img class="slides" src="images/travel/usa/seal.jpg" alt="Image1">
-    <img class="slides" src="images/travel/usa/half_dome.jpg" alt="Image2">
-    <img class="slides" src="images/travel/usa/pinnacle.jpg" alt="Image3">
-
-    <a class="left" onclick="changeSlide(-1, 'gallery1')">&#10094;</a>
-    <a class="right" onclick="changeSlide(1, 'gallery1')">&#10095;</a>
-
-    <div class="thumbnails">
-        <img class="thumbnail" src="images/travel/usa/seal.jpg" onclick="currentSlide(1, 'gallery1')" alt="Thumbnail 1">
-        <img class="thumbnail" src="images/travel/usa/half_dome.jpg" onclick="currentSlide(2, 'gallery1')" alt="Thumbnail 2">
-        <img class="thumbnail" src="images/travel/usa/pinnacle.jpg" onclick="currentSlide(3, 'gallery1')" alt="Thumbnail 3">
+    <div class="container">
+        <div class="box">Column 1</div>
+        <div class="box">Column 2</div>
+        <div class="box">Column 3</div>
+        <div class="box">Column 4</div>
+        <div class="box">Column 5</div>
+        <div class="box">Column 6</div>
     </div>
-</div>
-
-<div class="container" id="gallery2">
-    <img class="slides" src="images/travel/usa/red_canyon.jpg" alt="Image 4">
-    <img class="slides" src="images/travel/usa/toadstool.jpg" alt="Image 5">
-    <img class="slides" src="images/travel/usa/bryce_canyon.jpg" alt="Image 6">
-
-    <a class="left" onclick="changeSlide(-1, 'gallery2')">&#10094;</a>
-    <a class="right" onclick="changeSlide(1, 'gallery2')">&#10095;</a>
-
-    <div class="thumbnails">
-        <img class="thumbnail" src="images/travel/usa/red_canyon.jpg" onclick="currentSlide(1, 'gallery2')" alt="Thumbnail 4">
-        <img class="thumbnail" src="images/travel/usa/toadstool.jpg" onclick="currentSlide(2, 'gallery2')" alt="Thumbnail 5">
-        <img class="thumbnail" src="images/travel/usa/bryce_canyon.jpg" onclick="currentSlide(3, 'gallery2')" alt="Thumbnail 6">
-    </div>
-</div>
-
-<script>
-		const galleries = {
-				'gallery1': 1,
-				'gallery2': 1
-		};
-
-    function changeSlide(n, galleryId) {
-        showSlides(galleries[galleryId] += n, galleryId);
-    }
-
-    function currentSlide(n, galleryId) {
-        showSlides(galleries[galleryId] = n, galleryId);
-    }
-
-    function showSlides(n, galleryId) {
-        let i;
-        const container = document.getElementById(galleryId);
-        const slides = container.getElementsByClassName("slides");
-        const thumbnails = container.getElementsByClassName("thumbnail");
-
-        if (!galleries[galleryId]) galleries[galleryId] = 1;
-        if (n > slides.length) galleries[galleryId] = 1;
-        if (n < 1) galleries[galleryId] = slides.length;
-
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < thumbnails.length; i++) {
-            thumbnails[i].className = thumbnails[i].className.replace(" active", "");
-        }
-        slides[galleries[galleryId] - 1].style.display = "block";
-        thumbnails[galleries[galleryId] - 1].className += " active";
-    }
-
-    window.onload = function() {
-        const galleryIds = Object.keys(galleries);
-				// console.log(galleryIds);
-        for (let id of galleryIds) {
-            showSlides(galleries[id], id);
-        }
-    };
-</script>
-
 </body>
 </html>
