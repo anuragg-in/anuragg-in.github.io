@@ -48,7 +48,7 @@ y=y+'</ul>\
         </ul>\
       </li>\
       <li class = "dropdown-button-1">\
-      <a href = "contact.html">Contact</a>\
+      <a href = "travel.html">Travel</a>\
       </li>\
     </ul>\
   </li>\
