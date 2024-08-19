@@ -28,7 +28,7 @@ y=y+'</ul>\
       <a href = "hobbies.html">Hobbies</a>\
         <ul class = "dropdown-content-1">\
           <li class = "dropdown-button-2">\
-            <a href = "travel.html">Travel</a>\
+            <a href = "http://www.in2eco.com">Travel</a>\
           </li>\
           <li class = "dropdown-button-2">\
             <a href = "photography.html">Photography</a>\
