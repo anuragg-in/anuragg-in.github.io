@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="keywords" content="Github, Free, Static, Website, Hosting, Custom, Domain, Registrar, Redirect"/>
+  <meta name="description" content="A guide on hosting a static website (HTML, CSS, JavaScript) for free using GitHub, including steps to purchase a domain and configure it for your GitHub-hosted site."/>
+  <meta name="author" content="Anurag Gupta">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- OPEN GRAPH META TAGS -->
+  <meta property="og:title" content="Free Static Website Hosting on Github with Custom Domain">
+  <meta property="og:type" content="A guide on hosting a static website (HTML, CSS, JavaScript) for free using GitHub, including steps to purchase a domain and configure it for your GitHub-hosted site.">
+  <meta property="og:url" content="http://www.in2eco.com/canada_visa.html">
+  <meta property="og:description" content="A guide on hosting a static website (HTML, CSS, JavaScript) for free using GitHub, including steps to purchase a domain and configure it for your GitHub-hosted site.">
+  <meta property="og:image" content="images/in2eco-logo.png">
+  <meta property="og:site_name" content="Anurag Gupta">
+
+  <!-- TWITTER META TAGS -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="images/anurag.png">
+  <meta name="twitter:title" content="Free Static Website Hosting on Github with Custom Domain">
+  <meta name="twitter:description" content="A guide on hosting a static website (HTML, CSS, JavaScript) for free using GitHub, including steps to purchase a domain and configure it for your GitHub-hosted site.">
+  <meta name="twitter:site" content="@in_2_eco">
+
+  <title>Free Static Website Hosting on Github with Custom Domain</title>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:700,300" rel="stylesheet"
+          type="text/css">
+  <link rel="icon" href="images/in2eco-logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/prettify.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <style>
+  header , .pull-right a , .docs-nav a:hover, .docs-nav .active, span.sub_heading {background:#333;}
+  a,nav a:active,a:active{color:#333;}
+  </style>
+
+</head>
+<body>
+<div class="wrapper">
+<section>
+  <div class="container">
+    <ul class="docs-nav">
+      <li><strong><a href="index.html">Home</a></strong></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#github">Github</a></li>
+        <!-- <ul>
+          <li><a href="#c">Github</a></li>
+        </ul> -->
+      <li><a href="#custom-domain">Custom domain</a></li>
+        <ul>
+          <li><a href="#purchase-domain">Purchase a domain</a></li>
+          <li><a href="#configure-dns">Configure DNS records</a></li>
+          <li><a href="#configure-github">Configure Github</a></li>
+        </ul>
+    </ul>
+    <div class="docs-content">
+      <h2 class="entry-title">Free Static Website Hosting on Github with Custom Domain</h2>
+
+      <!-- ************************ SECTION: OVERVIEW ************************ -->
+      <h3 id="overview">Overview</h3>
+    	GitHub can be used to host static websites (HTML+CSS+Javascript). The process involves creating a GitHub repository, adding the website files, and enabling GitHub Pages to serve the content.<br>
+      Additionally, one can link a custom domain to their GitHub website, i.e., use a personalized domain name instead of the default Github URL. This service can be used for personal blogs, portfolios, documentation, and simple project sites with static content.
+      <!-- ************************ SECTION: APPLICATION ************************ -->
+      <h3 id="github">Github</h3>
+      To get started, create a public repository on GitHub, naming it as "username.github.io". Now add your static website files—such as HTML, CSS, and JavaScript—either by uploading them directly through GitHub's interface or by pushing them via Git. The website is live and accessible at a <i>username.github.io</i>.
+      <h3 id="custom-domain">Custom domain</h3>
+      Using a custom domain on GitHub Pages allows you to replace <i>username.github.io</i> with your own personalized domain name.
+      <h4 id="purchase-domain">Purchase a domain name from a domain registrar</h4>
+      The first step is to acquire a personalized domain name from a domain registrar (e.g., GoDaddy, Bigrock, Namecheap, etc). In this tutorial, I will use the domain name <i>anuragg.in</i> purchased on Bigrock.
+      <h4 id="configure-dns">Configure DNS settings</h4>
+      Log in to Bigrock website and access the DNS settings for your domain. Create four different <i>A</i> or <i>ANAME</i> records pointing to the github IP addresses <i>185.199.108.153</i>, <i>185.199.109.153</i>, <i>185.199.110.153</i>, and <i>185.199.111.153</i>, respectively.
+      <figure><img class="screenshot" src="images/github_website/a_records_anuragg.jpg"><figcaption>Managing DNS: <i>A</i> Records</figcaption></figure>
+      Also, create a <i>CNAME</i> DNS record with <i>www.anuragg.in</i> pointing to <i>username.github.io</i>.
+      <figure><img class="screenshot" src="images/github_website/cname_records_anuragg.jpg"><figcaption>Managing DNS: <i>CNAME</i> Records</figcaption></figure>
+      <h4 id="configure-github">Configure Github</h4>
+      Create a <i>CNAME</i> file in the Github repository. In the file, write the personalized domain name <i>anuragg.in</i>. Once DNS propogation completes, your website will be accessible via your custom domain. It can take up to 48 hours for DNS propogation. To complete the setup of the repository for custom domain, go to <i>Settings &rarr; Code and automation tab &rarr; Pages</i> and enter your personalized domain (anuragg.in) under the <i>Custom domain</i> section.
+      <figure><img class="screenshot" src="images/github_website/github_configure.jpg"><figcaption>Configure custom domain name on Github</figcaption></figure>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+</body>
+</html>
