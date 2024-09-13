@@ -22,7 +22,7 @@ plt.ylim(18, 62)       # Set the y-axis limits
 # Ensure x markers are less crowded
 plt.xticks(range(2003, 2021, 4))  # Set x-ticks every 2 years
 
-plt.savefig('social_engagement_plot.png', dpi=300, bbox_inches='tight', pad_inches=0.01)  # Save the plot as a PNG file
+plt.savefig('social_engagement_plot.png', dpi=300, bbox_inches='tight', pad_inches=0.1)  # Save the plot as a PNG file
 
 # Display the plot
 plt.show()

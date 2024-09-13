@@ -45,7 +45,7 @@ y=y+'</ul>\
         </ul>\
       </li>\
       <li class = "dropdown-button-1">\
-      <a href = "http://www.in2eco.com">Travel</a>\
+      <a href = "http://www.in2eco.com/travel.html">Travel</a>\
       </li>\
     </ul>\
   </li>\
