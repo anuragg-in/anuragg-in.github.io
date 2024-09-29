@@ -2,7 +2,19 @@
   {
     "filename": "shape_formation_using_kilobots.html",
     "title": "Shape formation using Kilobots",
-    "description": "we designed an algorithm for Kilobots to collaboratively form a given shape. A finite state machine based framework was utilized to breakdown the problem",
+    "description": "We design an algorithm for Kilobots to form a given shape. A finite state machine framework is utilized for the decentralized algorithm.",
     "keywords": "Shape formation,Kilobots,Decentralized control"
+  },
+  {
+    "filename": "books.html",
+    "title": "Favorite books",
+    "description": "List of favorite books with rating, interesting quotes, and link to my goodreads page.",
+    "keywords": "Favorite books, Quotes, Goodreads"
+  },
+  {
+    "filename": "bread.html",
+    "title": "Bread recipe",
+    "description": "Basics of making bread with advanced tips for skilled bakers.",
+    "keywords": "Bread making, baking, beginners, advanced tips"
   }
 ]
