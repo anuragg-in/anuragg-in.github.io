@@ -1,24 +1,48 @@
 import os
 import re
+from bs4 import BeautifulSoup
 blog_base_folder = 'blog_base'  # Path to your blog_base folder
 output_folder = 'blog'           # Path to your output folder
-linkHeader = "../"
-def modify_links(body_content, prefix=linkHeader):
-    # Modify src and href links by adding a prefix
-    # Find all src and href attributes
-    modified_content = re.sub(
-        r'(?P<before>src\s*=\s*["\'])(?P<link>[^"\']+)(?P<after>["\'])',
-        lambda m: f'{m.group("before")}{prefix}{m.group("link")}{m.group("after")}',
-        body_content
-    )
+linkHeader = "https://www.anuragg.in/"
+def modify_links(html, base_url=linkHeader):
+    """
+    Update href and src attributes in the given HTML.
 
-    modified_content = re.sub(
-        r'(?P<before>href\s*=\s*["\'])(?P<link>[^"\']+)(?P<after>["\'])',
-        lambda m: f'{m.group("before")}{prefix}{m.group("link")}{m.group("after")}',
-        modified_content
-    )
+    Parameters:
+    - html (str): The HTML content to modify.
+    - base_url (str): The base URL to prepend if href/src doesn't start with http.
 
-    return modified_content
+    Returns:
+    - str: The modified HTML content.
+    """
+    soup = BeautifulSoup(html, 'html.parser')
+
+    # Update all href attributes
+    for a in soup.find_all('a', href=True):
+        if not a['href'].startswith('http'):
+            a['href'] = base_url + a['href'].strip()
+
+    # Update all src attributes
+    for img in soup.find_all('img', src=True):
+        if not img['src'].startswith('http'):
+            img['src'] = base_url + img['src'].strip()
+
+    return str(soup)
+    # # Modify src and href links by adding a prefix
+    # # Find all src and href attributes
+    # modified_content = re.sub(
+    #     r'(?P<before>src\s*=\s*["\'])(?P<link>[^"\']+)(?P<after>["\'])',
+    #     lambda m: f'{m.group("before")}{prefix}{m.group("link")}{m.group("after")}',
+    #     body_content
+    # )
+    #
+    # modified_content = re.sub(
+    #     r'(?P<before>href\s*=\s*["\'])(?P<link>[^"\']+)(?P<after>["\'])',
+    #     lambda m: f'{m.group("before")}{prefix}{m.group("link")}{m.group("after")}',
+    #     modified_content
+    # )
+    #
+    # return modified_content
 
 def generate_html(input_filename, output_filename, indent_space=4):
     # Read the body content from the input file

@@ -1,20 +1,340 @@
 [
   {
-    "filename": "shape_formation_using_kilobots.html",
-    "title": "Shape formation using Kilobots",
-    "description": "We design an algorithm for Kilobots to form a given shape. A finite state machine framework is utilized for the decentralized algorithm.",
-    "keywords": "Shape formation,Kilobots,Decentralized control"
+    "filename": "books.html",
+    "title": "Favorite Quotes and Recommended Books",
+    "description": "Discover a collection of favorite quotes from impactful books like 'Man's Search for Meaning' and 'And Every Morning the Way Home Gets Longer and Longer.' Plus, explore a curated list of recommended books by renowned authors such as Fredrik Backman, Markus Zusak, and Khaled Hosseini.",
+    "keywords": [
+      "favorite book quotes",
+      "recommended books",
+      "Fredrik Backman",
+      "Viktor Frankl",
+      "reading suggestions",
+      "literary quotes",
+      "book recommendations",
+      "goodreads profile",
+      "inspiring lines from books",
+      "Saadat Hasan Manto"
+    ]
   },
   {
-    "filename": "books.html",
-    "title": "Favorite books",
-    "description": "List of favorite books with rating, interesting quotes, and link to my goodreads page.",
-    "keywords": "Favorite books, Quotes, Goodreads"
+    "filename": "github_website.html",
+    "title": "Free Static Website Hosting on GitHub with Custom Domain",
+    "description": "Learn how to host a free static website using GitHub Pages. This guide walks you through setting up a GitHub repository for hosting static content like HTML, CSS, and JavaScript. You'll also learn how to link a custom domain to your GitHub Pages site, making it accessible through a personalized URL.",
+    "keywords": [
+      "free static website hosting",
+      "GitHub Pages",
+      "custom domain on GitHub",
+      "static site hosting",
+      "host website on GitHub",
+      "GitHub Pages tutorial",
+      "custom domain setup",
+      "DNS settings for GitHub",
+      "GitHub static website",
+      "static content hosting"
+    ]
+  },
+  {
+    "filename": "flyback_converter.html",
+    "title": "Flyback Converter Project Overview",
+    "description": "This project, conducted as part of a B.Tech requirement under Prof. Mukul C. Chandorkar at IIT Bombay, focuses on the application of a flyback converter in pre-charging module capacitors for a Modular Multilevel Converter (MMC). It also details the design of a multi-output flyback converter for powering Nixie tubes and microcontrollers. The documentation includes schematics and printed circuit board (PCB) designs.",
+    "keywords": [
+      "Flyback converter",
+      "B.Tech project",
+      "Modular Multilevel Converter",
+      "multi-output flyback converter",
+      "Nixie tube power supply",
+      "microcontroller power supply",
+      "PCB design",
+      "DC input converter",
+      "AC rectified input",
+      "IIT Bombay project"
+    ]
+  },
+  {
+    "filename": "daq.html",
+    "title": "Data Acquisition System for Epstein Tester",
+    "description": "This project focuses on developing a data acquisition system for the Epstein tester, a device used to characterize magnetic materials by analyzing their B-H loop characteristics. The project aims to enhance the setup by integrating a built-in module that reduces reliance on bulky external components. The system utilizes an AD7768 ADC for 24-bit resolution at 256,000 samples per second and a DE0 Nano FPGA board for data transfer to a PC via UART protocol.",
+    "keywords": [
+      "Epstein tester",
+      "data acquisition system",
+      "B-H loop characteristics",
+      "AD7768 ADC",
+      "DE0 Nano FPGA",
+      "UART protocol",
+      "magnetic materials characterization",
+      "B-H waveform",
+      "block diagram",
+      "noise in circuits"
+    ]
+  },
+  {
+    "filename": "connectivity_in_nanowire.html",
+    "title": "Measurement of Connectivity in Nanowire Network",
+    "description": "This project focuses on designing an interface between a Keithley Source Measure Unit (SMU) and LabVIEW for two-probe and four-probe measurements of nanowire networks using a probe station. Additionally, it includes an interface for performing voltage and frequency sweeps for small voltage signals using an LCR meter. The project also entails a statistical analysis of the nanowire network's dimensions and electrical properties, utilizing ImageJ software to measure images obtained from Scanning Electron Microscopy (SEM).",
+    "keywords": [
+      "nanowire network",
+      "Keithley SMU",
+      "LabVIEW interface",
+      "two-probe measurements",
+      "four-probe measurements",
+      "voltage and frequency sweep",
+      "LCR meter",
+      "statistical analysis",
+      "ImageJ software",
+      "Scanning Electron Microscope (SEM)"
+    ]
+  },
+  {
+    "filename": "coins.html",
+    "title": "Special Edition Coins",
+    "description": "Explore a collection of special edition coins celebrating significant milestones and events in Indian history. This gallery features coins commemorating the 50th anniversary of the United Nations, the 75 years of Dandi March, and the 150th birth anniversary of Motilal Nehru, among others. Each coin represents a unique aspect of India's cultural heritage and historical significance.",
+    "keywords": [
+      "special edition coins",
+      "Indian history coins",
+      "commemorative coins",
+      "UN 50th anniversary coin",
+      "Dandi March 75 years",
+      "Motilal Nehru coin",
+      "Shaheed Bhagat Singh coin",
+      "Mother Teresa centenary",
+      "Indian cultural heritage",
+      "coin collection"
+    ]
   },
   {
     "filename": "bread.html",
-    "title": "Bread recipe",
-    "description": "Basics of making bread with advanced tips for skilled bakers.",
-    "keywords": "Bread making, baking, beginners, advanced tips"
+    "title": "Homemade Bread Recipe",
+    "description": "This comprehensive guide outlines the ingredients and equipment needed to make homemade bread. It covers essential steps such as proofing active dry yeast, making the dough, and baking the bread. Additionally, it provides tips for achieving the perfect texture and explains the differences between baking soda, baking powder, and yeast, along with references to further reading for aspiring bakers.",
+    "keywords": [
+      "homemade bread recipe",
+      "bread ingredients",
+      "baking tips",
+      "proofing yeast",
+      "dough making",
+      "baking equipment",
+      "baking soda vs baking powder vs yeast",
+      "multi-grain bread",
+      "baking references",
+      "bread baking techniques"
+    ]
+  },
+  {
+    "filename": "stereovision.html",
+    "title": "Stereovision Using More Than Two Image Sets",
+    "description": "This project explores a method to extract depth information from multiple image sets to enhance the accuracy of depth maps. By averaging depth maps obtained from all valid pairs of images, the project aims to minimize unresolved pixels in the final depth map. A comparison with ground truth data obtained from a depth sensor is also included.",
+    "keywords": [
+      "stereovision",
+      "depth map extraction",
+      "multi-image depth mapping",
+      "depth sensor",
+      "image pairs",
+      "depth map accuracy",
+      "computer vision",
+      "image processing",
+      "ground truth depth"
+    ]
+  },
+  {
+    "filename": "svm_log_barrier_method.html",
+    "title": "Support Vector Machine (SVM) Using Log-Barrier Method",
+    "description": "This project explores the use of Support Vector Machines (SVM) for classification tasks. The SVM algorithm aims to generate an optimal separating hyperplane by maximizing the margin between two classes in a dataset using a constrained quadratic convex optimization formulation. The project employs the log-barrier method, an interior point approach, to handle inequality constraints in optimization problems, converging to a true solution through iterative adjustments of the penalty function parameter. The results showcase the effectiveness of the log-barrier method and central path technique in optimizing hyperplane placement for both linearly separable and inseparable data.",
+    "keywords": [
+      "Support Vector Machine",
+      "SVM",
+      "log-barrier method",
+      "convex optimization",
+      "classification algorithm",
+      "hyperplane",
+      "central path method",
+      "inequality constraints",
+      "artificial intelligence",
+      "machine learning"
+    ]
+  },
+  {
+    "filename": "testing_of_digital_circuits.html",
+    "title": "Testing of Digital Circuits Using Beaglebone Black",
+    "description": "This project aims to develop a Python-based software application for the Beaglebone Black to debug and validate mock-up circuit designs on a breadboard. The strategy involves accepting device descriptions, scanning through all possible input sets for combinational circuits, and utilizing the Postman algorithm for state and transition analysis in sequential circuits. Results are displayed on a graphical user interface (GUI) that caters to both combinational and sequential circuits.",
+    "keywords": [
+      "Beaglebone Black",
+      "digital circuits",
+      "Python",
+      "mock-up circuit design",
+      "breadboard",
+      "debugging",
+      "validation",
+      "combinational circuits",
+      "sequential circuits",
+      "graphical user interface"
+    ]
+  },
+  {
+    "filename": "shape_formation_using_kilobots.html",
+    "title": "Shape Formation Using Kilobots",
+    "description": "This project, part of lab work (SC 626), focuses on utilizing Kilobots to collaboratively form specified shapes. Guided by Prof. Leena Vachhani and Prof. Arpita Sinha, the project leverages Kilobots, low-cost robots designed at Harvard University's Self-organizing Systems Research Lab, which possess features like differential drive locomotion and on-board computation. The algorithm developed employs a finite state machine framework, incorporating an orbiting algorithm and a localization mechanism. The project outcomes are detailed in a report and presentation, with a flowchart illustrating the shape formation algorithm and a demonstration video showcasing the functionality.",
+    "keywords": [
+      "Kilobots",
+      "shape formation",
+      "collective robotics",
+      "finite state machine",
+      "algorithm",
+      "differential drive locomotion",
+      "localization",
+      "collaboration",
+      "self-organizing systems",
+      "Harvard University"
+    ]
+  },
+  {
+    "filename": "sketching.html",
+    "title": "Sketching",
+    "description": "This section features various sketches captured through photography, showcasing personal moments and objects of interest. The included images highlight a selfie taken on September 16, 2016, and a photograph of a Sony headphone taken on the same date, reflecting a blend of personal expression and product representation.",
+    "keywords": [
+      "sketching",
+      "photography",
+      "selfie",
+      "Sony headphone",
+      "personal expression",
+      "object photography",
+      "memories",
+      "art"
+    ]
+  },
+  {
+    "filename": "shared_economy_for_battery_storage.html",
+    "title": "Shared Economy for Battery Storage",
+    "description": "This project explores the concept of shared battery storage as a strategy to minimize exposure to real-time electricity market fluctuations. Under the guidance of Prof. Ankur Kulkarni, the project involved a literature survey of game theoretic models focused on coalition benefits for electricity consumers amid dynamic tariff pricing policies. The findings highlight the advantages of shared battery resources over individual storage solutions, emphasizing long-term cost minimization through optimized battery sizing.",
+    "keywords": [
+      "shared economy",
+      "battery storage",
+      "electricity market",
+      "dynamic tariff",
+      "game theory",
+      "coalition formation",
+      "cost minimization",
+      "optimization"
+    ]
+  },
+  {
+    "filename": "resources.html",
+    "title": "Interesting Solutions Based on Good Theories",
+    "description": "A collection of resources showcasing interesting solutions based on theoretical frameworks, including participatory budgeting, fair allocation algorithms, and insights into animal behavior. This page provides links to platforms and papers that exemplify these concepts.",
+    "keywords": [
+      "participatory budgeting",
+      "fair allocation",
+      "theoretical solutions",
+      "animal behavior",
+      "mathematics",
+      "resources"
+    ]
+  },
+  {
+    "filename": "pipeline_risc_architecture.html",
+    "title": "Pipeline RISC Architecture on FPGA",
+    "description": "This project involved the design of a 6-stage pipelined processor based on a provided instruction set architecture. The processor, a 16-bit computer, follows the Little Computer Architecture and is designed to optimize performance through hazard mitigation techniques like forwarding and branch prediction.",
+    "keywords": [
+      "RISC architecture",
+      "FPGA",
+      "pipelined processor",
+      "hazard mitigation",
+      "forwarding",
+      "branch prediction",
+      "computer architecture"
+    ]
+  },
+  {
+    "filename": "photography.html",
+    "title": "Photography",
+    "description": "A collection of photographs capturing memorable moments from various locations and experiences.",
+    "keywords": [
+      "photography",
+      "travel",
+      "IIT Bombay",
+      "Bintan Island",
+      "global warming",
+      "Juhu beach",
+      "Gateway of India",
+      "Rohtang Pass"
+    ]
+  },
+  {
+    "filename": "image_classification.html",
+    "title": "Classification of Image Features for Remote Sensing",
+    "description": "A study comparing the efficiency of K-mean and C-mean clustering algorithms on satellite images for image feature classification.",
+    "keywords": [
+      "image classification",
+      "remote sensing",
+      "K-mean clustering",
+      "C-mean clustering",
+      "satellite images",
+      "image features"
+    ]
+  },
+  {
+    "filename": "hysteresis_loop_modeling.html",
+    "title": "Hysteresis Loop Modeling in Rolling and Transverse Direction of Grain Oriented Magnetic Material",
+    "description": "This paper presents a comprehensive approach for modeling dynamic hysteresis loops in rolling and transverse directions of grain-oriented magnetic materials, utilizing magnetic viscosity-based methods and loss separation schemes.",
+    "keywords": [
+      "hysteresis loop",
+      "grain-oriented materials",
+      "dynamic modeling",
+      "magnetic properties",
+      "rolling direction",
+      "transverse direction",
+      "transformer laminations"
+    ]
+  },
+  {
+    "filename": "image_stitching.html",
+    "title": "Image Stitching for Arbitrary Camera Motion",
+    "description": "This project aims to stitch multiple images obtained from arbitrary camera motion into a single panorama. A set of seven images captured in a hostel room was used for demonstration.",
+    "keywords": [
+      "image stitching",
+      "panorama",
+      "camera motion",
+      "image processing",
+      "computer vision",
+      "arbitrary motion"
+    ]
+  },
+  {
+    "filename": "hough_transform.html",
+    "title": "Generalized Hough Transform",
+    "description": "This project extends the traditional Hough transform algorithm to detect arbitrary, non-parametric shapes with different scaling, using gradient information around the centroid of the shape.",
+    "keywords": [
+      "Hough transform",
+      "shape detection",
+      "image processing",
+      "non-parametric shapes",
+      "gradient information",
+      "computer vision"
+    ]
+  },
+  {
+    "filename": "iitb_fyi.html",
+    "title": "IITB Fresher's Toolkit",
+    "description": "A comprehensive guide for new students at IIT Bombay, covering email personalization, mail forwarding, software installation, and essential resources for academic success.",
+    "keywords": [
+      "IIT Bombay",
+      "fresher's toolkit",
+      "email setup",
+      "software installation",
+      "VPN access",
+      "personal webpage",
+      "campus resources"
+    ]
+  },
+  {
+    "filename": "hobbies.html",
+    "title": "Hobbies",
+    "description": "A collection of personal hobbies including photography, sketching, reading, playing musical instruments, and coin collecting.",
+    "keywords": [
+      "hobbies",
+      "photography",
+      "sketching",
+      "reading",
+      "musical instruments",
+      "coin collecting"
+    ]
   }
 ]
