@@ -1,44 +1,64 @@
 import os
 import xml.etree.ElementTree as ET
-from urllib.parse import urljoin
-import xml.dom.minidom as minidom
 
-def generate_sitemap(base_url, exclude_files=None):
-    if exclude_files is None:
-        exclude_files = []
+# Function to create a URL element for the sitemap
+def create_url_element(url):
+    url_element = ET.Element("url")
+    loc = ET.SubElement(url_element, "loc")
+    loc.text = url
+    return url_element
 
-    # Create the root of the XML document
+# Function to indent the XML tree for pretty printing
+def indent(elem, level=0):
+    i = "\n" + level * "  "
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = i + "  "
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+        for subelem in elem:
+            indent(subelem, level + 1)
+        if not subelem.tail or not subelem.tail.strip():
+            subelem.tail = i
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = i
+
+# Function to generate sitemap without going into subdirectories
+def generate_sitemap():
+    # Root element for the sitemap with the additional xmlns:xhtml attribute
     urlset = ET.Element("urlset", {
         "xmlns": "http://www.sitemaps.org/schemas/sitemap/0.9",
         "xmlns:xhtml": "http://www.w3.org/1999/xhtml"
     })
 
-    # Iterate through all files in the current directory
-    for file in os.listdir('.'):
-        # Only include .html files and skip excluded files
-        if file.endswith(".html") and file not in exclude_files:
-            # Create the <url> element
-            url_element = ET.SubElement(urlset, "url")
+    # Base URL
+    base_url = "https://www.anuragg.in/"
 
-            # Create the <loc> element with the full URL
-            loc = ET.SubElement(url_element, "loc")
-            loc.text = urljoin(base_url, file)
+    # Directories to check (current directory and blog folder)
+    directories = [os.getcwd(), os.path.join(os.getcwd(), "blog")]
 
-    # Convert the ElementTree to a string
-    rough_string = ET.tostring(urlset, 'utf-8')
+    for directory in directories:
+        # List files in the directory (do not go into subdirectories)
+        for filename in os.listdir(directory):
+            if filename.endswith('.html'):
+                # Generate the relative path and create the full URL
+                relative_path = os.path.relpath(os.path.join(directory, filename), os.getcwd()).replace("\\", "/")
+                full_url = base_url + relative_path
 
-    # Use minidom to add proper indentation
-    reparsed = minidom.parseString(rough_string)
-    pretty_xml = reparsed.toprettyxml(indent="  ", newl='\n')
+                # Append the URL element to the sitemap
+                url_element = create_url_element(full_url)
+                urlset.append(url_element)
 
-    # Write the prettified XML to a file
-    with open("sitemap.xml", "w", encoding="utf-8") as f:
-        f.write(pretty_xml)
+    # Indent the XML for proper formatting
+    indent(urlset)
 
-    print("Sitemap generated successfully with proper indentation and EOL.")
+    # Write the sitemap to an XML file with proper XML declaration and formatting
+    tree = ET.ElementTree(urlset)
+    with open("sitemap.xml", "wb") as f:
+        tree.write(f, encoding="utf-8", xml_declaration=True)
 
-# Usage example
-base_url = "https://www.anuragg.in/"
-exclude_files = ["top.html", "bottom.html"]  # Add files to exclude if needed
+    print("Sitemap generated successfully as 'sitemap.xml'.")
 
-generate_sitemap(base_url, exclude_files)
+# Run the function to generate the sitemap
+generate_sitemap()

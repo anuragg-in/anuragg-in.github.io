@@ -1,55 +1,10 @@
-<?xml version="1.0" ?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://www.anuragg.in/image_classification.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/testing_of_digital_circuits.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/hough_transform.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/photography.html</loc>
-  </url>
   <url>
     <loc>https://www.anuragg.in/index.html</loc>
   </url>
   <url>
-    <loc>https://www.anuragg.in/image_stitching.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/shape_formation_using_kilobots.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/svm_log_barrier_method.html</loc>
-  </url>
-  <url>
     <loc>https://www.anuragg.in/contact.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/bread.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/hysteresis_loop_modeling.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/connectivity_in_nanowire.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/books.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/shared_economy_for_battery_storage.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/pipeline_risc_architecture.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/coins.html</loc>
-  </url>
-  <url>
-    <loc>https://www.anuragg.in/sketching.html</loc>
   </url>
   <url>
     <loc>https://www.anuragg.in/projects.html</loc>
@@ -58,21 +13,66 @@
     <loc>https://www.anuragg.in/resources.html</loc>
   </url>
   <url>
-    <loc>https://www.anuragg.in/iitb_fyi.html</loc>
+    <loc>https://www.anuragg.in/blog/image_classification.html</loc>
   </url>
   <url>
-    <loc>https://www.anuragg.in/github_website.html</loc>
+    <loc>https://www.anuragg.in/blog/testing_of_digital_circuits.html</loc>
   </url>
   <url>
-    <loc>https://www.anuragg.in/stereovision.html</loc>
+    <loc>https://www.anuragg.in/blog/hough_transform.html</loc>
   </url>
   <url>
-    <loc>https://www.anuragg.in/daq.html</loc>
+    <loc>https://www.anuragg.in/blog/photography.html</loc>
   </url>
   <url>
-    <loc>https://www.anuragg.in/flyback_converter.html</loc>
+    <loc>https://www.anuragg.in/blog/image_stitching.html</loc>
   </url>
   <url>
-    <loc>https://www.anuragg.in/hobbies.html</loc>
+    <loc>https://www.anuragg.in/blog/shape_formation_using_kilobots.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/svm_log_barrier_method.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/bread.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/hysteresis_loop_modeling.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/connectivity_in_nanowire.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/books.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/shared_economy_for_battery_storage.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/pipeline_risc_architecture.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/coins.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/sketching.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/iitb_fyi.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/github_website.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/stereovision.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/daq.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/flyback_converter.html</loc>
+  </url>
+  <url>
+    <loc>https://www.anuragg.in/blog/hobbies.html</loc>
   </url>
 </urlset>
