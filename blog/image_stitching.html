@@ -1,55 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='geo.region' content='IN-DL'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='blog.css'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
-
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
-    <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
-    <meta name="author" content="Anurag Gupta">
-
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay">
-    <meta property="og:type" content="Personal website">
-    <meta property="og:url" content="http://www.anuragg.in">
-    <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
-    <meta property="og:image" content="images/anurag.png">
-    <meta property="og:site_name" content="Anurag Gupta">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="images/anurag.png">
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay">
-    <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
+<meta charset="utf-8"/>
+<meta content="IN-DL" name="geo.region"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Image Stitching for Arbitrary Camera Motion</title>
+<meta content="image stitching panorama camera motion image processing computer vision arbitrary motion" name="keywords"/>
+<meta content="This project aims to stitch multiple images obtained from arbitrary camera motion into a single panorama. A set of seven images captured in a hostel room was used for demonstration." name="description"/>
+<meta content="Anurag Gupta" name="author"/>
+<meta content="Image Stitching for Arbitrary Camera Motion" property="og:title"/>
+<meta content="Personal website" property="og:type"/>
+<meta content="http://www.anuragg.in" property="og:url"/>
+<meta content="Image Stitching for Arbitrary Camera Motion" property="og:description"/>
+<meta content="images/anurag.png" property="og:image"/>
+<meta content="Anurag Gupta" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="images/anurag.png" name="twitter:image"/>
+<meta content="Image Stitching for Arbitrary Camera Motion" name="twitter:title"/>
+<meta content="This project aims to stitch multiple images obtained from arbitrary camera motion into a single panorama. A set of seven images captured in a hostel room was used for demonstration." name="twitter:description"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="https://www.anuragg.in/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 <div class="wrapper">
-  <div class="docs-nav-container">
-    <ul class="docs-nav">
-      <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
-      </li>
-    </ul>
-  </div>
-  <div class="docs-content">
-                <h1>Image stitching for arbitrary camera motion</h1>
-    <p>Panorama is an image obtained from stitching multiple images obtained from horizontal motion of camera. This projects aims to stitch multiple images obtained from arbitrary motion of camera. For the purpose of demonstration, a set of 7 images of a hostel room were snapped by a mobile camera. The images were scaled down to reduce processing time.</p>
-    <h2>Input</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/1.jpg"/><figcaption>Image 1</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/2.jpg"/><figcaption>Image 2</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/3.jpg"/><figcaption>Image 3</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/4.jpg"/><figcaption>Image 4</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/5.jpg"/><figcaption>Image 5</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/6.jpg"/><figcaption>Image 6</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/7.jpg"/><figcaption>Image 7</figcaption></figure>
-    <h2>Result</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/stitch2.jpg"/><figcaption>Stitched image obtained from image 1-7</figcaption></figure>
-    <h2>Author</h2>
-    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+<div class="docs-nav-container">
+<ul class="docs-nav">
+<li>
+<a href="https://www.anuragg.in"><strong>Home</strong></a>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<h1>Image stitching for arbitrary camera motion</h1>
+<p>Panorama is an image obtained from stitching multiple images obtained from horizontal motion of camera. This projects aims to stitch multiple images obtained from arbitrary motion of camera. For the purpose of demonstration, a set of 7 images of a hostel room were snapped by a mobile camera. The images were scaled down to reduce processing time.</p>
+<h2>Input</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/1.jpg"/><figcaption>Image 1</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/2.jpg"/><figcaption>Image 2</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/3.jpg"/><figcaption>Image 3</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/4.jpg"/><figcaption>Image 4</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/5.jpg"/><figcaption>Image 5</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/6.jpg"/><figcaption>Image 6</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/7.jpg"/><figcaption>Image 7</figcaption></figure>
+<h2>Result</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/image_stitching/stitch2.jpg"/><figcaption>Stitched image obtained from image 1-7</figcaption></figure>
+<h2>Author</h2>
+<p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>
 <script src="blog.js"></script>
-</body>
+</div></body>
 </html>
-

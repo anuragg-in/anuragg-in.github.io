@@ -1,56 +1,53 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='geo.region' content='IN-DL'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='blog.css'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
-
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
-    <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
-    <meta name="author" content="Anurag Gupta">
-
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay">
-    <meta property="og:type" content="Personal website">
-    <meta property="og:url" content="http://www.anuragg.in">
-    <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
-    <meta property="og:image" content="images/anurag.png">
-    <meta property="og:site_name" content="Anurag Gupta">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="images/anurag.png">
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay">
-    <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
+<meta charset="utf-8"/>
+<meta content="IN-DL" name="geo.region"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stereovision Using More Than Two Image Sets</title>
+<meta content="stereovision depth map extraction multi-image depth mapping depth sensor image pairs depth map accuracy computer vision image processing ground truth depth" name="keywords"/>
+<meta content="This project explores a method to extract depth information from multiple image sets to enhance the accuracy of depth maps. By averaging depth maps obtained from all valid pairs of images, the project aims to minimize unresolved pixels in the final depth map. A comparison with ground truth data obtained from a depth sensor is also included." name="description"/>
+<meta content="Anurag Gupta" name="author"/>
+<meta content="Stereovision Using More Than Two Image Sets" property="og:title"/>
+<meta content="Personal website" property="og:type"/>
+<meta content="http://www.anuragg.in" property="og:url"/>
+<meta content="Stereovision Using More Than Two Image Sets" property="og:description"/>
+<meta content="images/anurag.png" property="og:image"/>
+<meta content="Anurag Gupta" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="images/anurag.png" name="twitter:image"/>
+<meta content="Stereovision Using More Than Two Image Sets" name="twitter:title"/>
+<meta content="This project explores a method to extract depth information from multiple image sets to enhance the accuracy of depth maps. By averaging depth maps obtained from all valid pairs of images, the project aims to minimize unresolved pixels in the final depth map. A comparison with ground truth data obtained from a depth sensor is also included." name="twitter:description"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="https://www.anuragg.in/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 <div class="wrapper">
-  <div class="docs-nav-container">
-    <ul class="docs-nav">
-      <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
-      </li>
-    </ul>
-  </div>
-  <div class="docs-content">
-                <h1>Stereovision using more than two image sets</h1>
-    <p>This projects aims to extract depth information from more than two image sets, thereby, improving accuracy of depth map. To do so, depth map set, obtained from all valid pair of images, is averaged out to reduce number of unresolved pixels in final depth map. For comparison, ground truth for depth map was also obtained using depth sensor.</p>
-    <h2>Input</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/view0.jpg"/><figcaption>Left image</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/view1.jpg"/><figcaption>Center image</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/view2.jpg"/><figcaption>Right image</figcaption></figure>
-    <h2>Ground truth</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/ground_truth.jpg"/><figcaption>Ground truth for depth map</figcaption></figure>
-    <h2>Results</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/stereo1.jpg"/><figcaption>Depth map obtained from left and center image</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/stereo2.jpg"/><figcaption>Depth map obtained from center and right image</figcaption>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/stereo_average.jpg"/><figcaption>Average depth map</figcaption></figure>
-    </figure>
-    <h2>Author</h2>
-    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+<div class="docs-nav-container">
+<ul class="docs-nav">
+<li>
+<a href="https://www.anuragg.in"><strong>Home</strong></a>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<h1>Stereovision using more than two image sets</h1>
+<p>This projects aims to extract depth information from more than two image sets, thereby, improving accuracy of depth map. To do so, depth map set, obtained from all valid pair of images, is averaged out to reduce number of unresolved pixels in final depth map. For comparison, ground truth for depth map was also obtained using depth sensor.</p>
+<h2>Input</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/view0.jpg"/><figcaption>Left image</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/view1.jpg"/><figcaption>Center image</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/view2.jpg"/><figcaption>Right image</figcaption></figure>
+<h2>Ground truth</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/ground_truth.jpg"/><figcaption>Ground truth for depth map</figcaption></figure>
+<h2>Results</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/stereo1.jpg"/><figcaption>Depth map obtained from left and center image</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/stereo2.jpg"/><figcaption>Depth map obtained from center and right image</figcaption>
+<figure><img class="image-border" src="https://www.anuragg.in/images/stereoimaging/stereo_average.jpg"/><figcaption>Average depth map</figcaption></figure>
+</figure>
+<h2>Author</h2>
+<p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>
 <script src="blog.js"></script>
-</body>
+</div></body>
 </html>
-

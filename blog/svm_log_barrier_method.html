@@ -1,60 +1,57 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='geo.region' content='IN-DL'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='blog.css'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
-
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
-    <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
-    <meta name="author" content="Anurag Gupta">
-
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay">
-    <meta property="og:type" content="Personal website">
-    <meta property="og:url" content="http://www.anuragg.in">
-    <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
-    <meta property="og:image" content="images/anurag.png">
-    <meta property="og:site_name" content="Anurag Gupta">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="images/anurag.png">
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay">
-    <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
+<meta charset="utf-8"/>
+<meta content="IN-DL" name="geo.region"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Support Vector Machine (SVM) Using Log-Barrier Method</title>
+<meta content="Support Vector Machine SVM log-barrier method convex optimization classification algorithm hyperplane central path method inequality constraints artificial intelligence machine learning" name="keywords"/>
+<meta content="This project explores the use of Support Vector Machines (SVM) for classification tasks. The SVM algorithm aims to generate an optimal separating hyperplane by maximizing the margin between two classes in a dataset using a constrained quadratic convex optimization formulation. The project employs the log-barrier method, an interior point approach, to handle inequality constraints in optimization problems, converging to a true solution through iterative adjustments of the penalty function parameter. The results showcase the effectiveness of the log-barrier method and central path technique in optimizing hyperplane placement for both linearly separable and inseparable data." name="description"/>
+<meta content="Anurag Gupta" name="author"/>
+<meta content="Support Vector Machine (SVM) Using Log-Barrier Method" property="og:title"/>
+<meta content="Personal website" property="og:type"/>
+<meta content="http://www.anuragg.in" property="og:url"/>
+<meta content="Support Vector Machine (SVM) Using Log-Barrier Method" property="og:description"/>
+<meta content="images/anurag.png" property="og:image"/>
+<meta content="Anurag Gupta" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="images/anurag.png" name="twitter:image"/>
+<meta content="Support Vector Machine (SVM) Using Log-Barrier Method" name="twitter:title"/>
+<meta content="This project explores the use of Support Vector Machines (SVM) for classification tasks. The SVM algorithm aims to generate an optimal separating hyperplane by maximizing the margin between two classes in a dataset using a constrained quadratic convex optimization formulation. The project employs the log-barrier method, an interior point approach, to handle inequality constraints in optimization problems, converging to a true solution through iterative adjustments of the penalty function parameter. The results showcase the effectiveness of the log-barrier method and central path technique in optimizing hyperplane placement for both linearly separable and inseparable data." name="twitter:description"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="https://www.anuragg.in/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 <div class="wrapper">
-  <div class="docs-nav-container">
-    <ul class="docs-nav">
-      <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
-      </li>
-    </ul>
-  </div>
-  <div class="docs-content">
-                <h1>Support Vector Machine (SVM) using log-barrier method</h1>
-    <p>
+<div class="docs-nav-container">
+<ul class="docs-nav">
+<li>
+<a href="https://www.anuragg.in"><strong>Home</strong></a>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<h1>Support Vector Machine (SVM) using log-barrier method</h1>
+<p>
     	This project was undertaken as a part of course (Convex optimization) requirement under the guidance of Prof. Kunal N. Chaudhary.<br/>
     	SVM is a popular classification algorithm utilized in applications of artificial intelligence to separate dissimilar data. Given a two class training dataset, SVM generates an optimal separating hyperplane (by maximizing the margin) to sequester two class of data using a constrained quadratic convex optimization formulation.
     </p>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/svm_maximizing_margin.png"/><figcaption>Optimal hyperplane and margin hyperplane obtained using SVM optimization problem</figcaption></figure>
-    <p>
+<figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/svm_maximizing_margin.png"/><figcaption>Optimal hyperplane and margin hyperplane obtained using SVM optimization problem</figcaption></figure>
+<p>
     	Log-barrier method is an interior point method used to convert an inequality constrained optimization problem to an approximate constrained problem using a logarithmic penalty function. The solution for the latter problem asymptotically converges to true solution as the value of a parameter (<i>t</i>) in the penalty function is made arbitrarily large.
     </p>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/approximate_indicator_function.png"/><figcaption>Approximate penalty function for increasing value of <i>t</i></figcaption></figure>
-    <p>
+<figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/approximate_indicator_function.png"/><figcaption>Approximate penalty function for increasing value of <i>t</i></figcaption></figure>
+<p>
     	If we use very large value of <i>t</i> to run our optimization, we get poor results due to large value of Hessian of objective function at the boundary of solution space. Hence, optimization is run multiple times with increasing value of <i>t</i>. Solution from previous iteration is used as starting point for current iteration. This technique is known as central path method.
     </p>
-    <figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/svm using log barrier method.pdf">Presentation.pdf</a></figcaption></figure>
-    <h2>Results</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/separating_hyperplane_linearly_separable_data_log_barrier_method_multiple_t.png"/><figcaption>Optimal hyperplane for linearly separable data obtained from SVM optimization problem after incorporating the concept of log-barrier method and central path (<i>t</i> is the parameter of penalty function. Larger the value of t, better the result obtained using central path.)</figcaption></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/separating_hyperplane_linearly_inseparable_data_log_barrier_method_multiple_t.png"/><figcaption>Optimal hyperplane for linearly inseparable data obtained from SVM optimization problem after incorporating the concept of log-barrier method and central path (<i>t</i> is the parameter of penalty function. Larger the value of t, better the result obtained using central path.)</figcaption></figure>
-    <h2>Author</h2>
-    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+<figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/svm using log barrier method.pdf">Presentation.pdf</a></figcaption></figure>
+<h2>Results</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/separating_hyperplane_linearly_separable_data_log_barrier_method_multiple_t.png"/><figcaption>Optimal hyperplane for linearly separable data obtained from SVM optimization problem after incorporating the concept of log-barrier method and central path (<i>t</i> is the parameter of penalty function. Larger the value of t, better the result obtained using central path.)</figcaption></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/svm_log_barrier_method/separating_hyperplane_linearly_inseparable_data_log_barrier_method_multiple_t.png"/><figcaption>Optimal hyperplane for linearly inseparable data obtained from SVM optimization problem after incorporating the concept of log-barrier method and central path (<i>t</i> is the parameter of penalty function. Larger the value of t, better the result obtained using central path.)</figcaption></figure>
+<h2>Author</h2>
+<p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>
 <script src="blog.js"></script>
-</body>
+</div></body>
 </html>
-

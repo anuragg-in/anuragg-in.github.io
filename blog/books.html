@@ -1,42 +1,40 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='geo.region' content='IN-DL'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='blog.css'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
-
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
-    <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
-    <meta name="author" content="Anurag Gupta">
-
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay">
-    <meta property="og:type" content="Personal website">
-    <meta property="og:url" content="http://www.anuragg.in">
-    <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
-    <meta property="og:image" content="images/anurag.png">
-    <meta property="og:site_name" content="Anurag Gupta">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="images/anurag.png">
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay">
-    <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
+<meta charset="utf-8"/>
+<meta content="IN-DL" name="geo.region"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Favorite Quotes and Recommended Books</title>
+<meta content="favorite book quotes recommended books Fredrik Backman Viktor Frankl reading suggestions literary quotes book recommendations goodreads profile inspiring lines from books Saadat Hasan Manto" name="keywords"/>
+<meta content="Discover a collection of favorite quotes from impactful books like 'Man's Search for Meaning' and 'And Every Morning the Way Home Gets Longer and Longer.' Plus, explore a curated list of recommended books by renowned authors such as Fredrik Backman, Markus Zusak, and Khaled Hosseini." name="description"/>
+<meta content="Anurag Gupta" name="author"/>
+<meta content="Favorite Quotes and Recommended Books" property="og:title"/>
+<meta content="Personal website" property="og:type"/>
+<meta content="http://www.anuragg.in" property="og:url"/>
+<meta content="Favorite Quotes and Recommended Books" property="og:description"/>
+<meta content="images/anurag.png" property="og:image"/>
+<meta content="Anurag Gupta" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="images/anurag.png" name="twitter:image"/>
+<meta content="Favorite Quotes and Recommended Books" name="twitter:title"/>
+<meta content="Discover a collection of favorite quotes from impactful books like 'Man's Search for Meaning' and 'And Every Morning the Way Home Gets Longer and Longer.' Plus, explore a curated list of recommended books by renowned authors such as Fredrik Backman, Markus Zusak, and Khaled Hosseini." name="twitter:description"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="https://www.anuragg.in/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 <div class="wrapper">
-  <div class="docs-nav-container">
-    <ul class="docs-nav">
-      <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
-      </li>
-    </ul>
-  </div>
-  <div class="docs-content">
-                <h1>Books</h1>
-    <h2>Favourite lines</h2>
-    <div id="favorite_lines"></div><script>
+<div class="docs-nav-container">
+<ul class="docs-nav">
+<li>
+<a href="https://www.anuragg.in"><strong>Home</strong></a>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<h1>Books</h1>
+<h2>Favourite lines</h2>
+<div id="favorite_lines"></div><script>
     lines = new Array('There are things which must cause you to lose your reason or you have none to lose','Victor Frankl (Man\'s search for meaning)','Noah\'s feet don\'t touch the ground when his legs dangle over the edge of the bench, but his head reaches all the way to space, because he hasn\'t been alive long enough to allow anyone to keep his thoughts on Earth.','Fredrik Backman (And every morning the way home gets longer and longer)', 'Saeed is a poet, a terribly heartless poet. He won\'t slaughter a chicken with knife; he\'ll wring its neck, pluck its feathers and then make broth out of it. He will drink the broth, chew on the bones, then sit in a corner comfortably and write a poem about the chicken\'s demise, with tears in his eyes.','Saadat Hasan Manto','A couple of degrees behind your name could make all the difference, even if you can\'t put them down in right order.','Unidentified source','No bargaining unless you have a gun.','Some shop\'s reception','Wife and dog missing. Reward for dog.','The Judge (2014)');
     var x=document.getElementById('favorite_lines');
     var y='';
@@ -46,15 +44,15 @@
     }
     x.innerHTML=y;
     </script>
-    <hr/>
-    <h2>Recommended books</h2><table>
-    <tr>
-    <th>Title</th><th>Author</th>
-    </tr>
-    <tbody id="recommended_books">
-    </tbody>
-    </table>
-    <script>
+<hr/>
+<h2>Recommended books</h2><table>
+<tr>
+<th>Title</th><th>Author</th>
+</tr>
+<tbody id="recommended_books">
+</tbody>
+</table>
+<script>
     var x=document.getElementById('recommended_books');
     var y='';
     var books = new Array("A man called Ove","Fredrik Backman","The book thief","Markus Zusak","For those who are lost","Julia Bryan Thomas","Counting by 7s","Holly Goldberg Sloan","Gone with the wind","Mitchell Margaret","Lincoln in the bardo","George Saunders","1984","George Orwell","And every morning the way home gets longer and longer","Fredrik Backman","Black flags: the rise of ISIS","Joby Warrick","Why God won't go away","Andrew B. Newberg","The God of small things","Arundhati Roy","Sideways stories from wayside school","Louis Sachar","The witch of Portobello","Paulo Coelho","Atonement","Ian McEwan","And the mountains echoed","Khaled Hosseni","When I'm gone","Emily Bleeker","The elephant whisperer","Anthony Lawrence");
@@ -64,14 +62,13 @@
     }
     x.innerHTML=y;
     </script>
-    <br/>
-    <p>
+<br/>
+<p>
     	For more, visit my <a href="https://www.goodreads.com/user/show/45523948-anurag">goodreads' profile page.</a>
-    </p>
-    <h2>Author</h2>
-    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+</p>
+<h2>Author</h2>
+<p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>
 <script src="blog.js"></script>
-</body>
+</div></body>
 </html>
-

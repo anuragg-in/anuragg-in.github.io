@@ -1,62 +1,59 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='geo.region' content='IN-DL'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='blog.css'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
-
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
-    <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
-    <meta name="author" content="Anurag Gupta">
-
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay">
-    <meta property="og:type" content="Personal website">
-    <meta property="og:url" content="http://www.anuragg.in">
-    <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
-    <meta property="og:image" content="images/anurag.png">
-    <meta property="og:site_name" content="Anurag Gupta">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="images/anurag.png">
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay">
-    <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
+<meta charset="utf-8"/>
+<meta content="IN-DL" name="geo.region"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pipeline RISC Architecture on FPGA</title>
+<meta content="RISC architecture FPGA pipelined processor hazard mitigation forwarding branch prediction computer architecture" name="keywords"/>
+<meta content="This project involved the design of a 6-stage pipelined processor based on a provided instruction set architecture. The processor, a 16-bit computer, follows the Little Computer Architecture and is designed to optimize performance through hazard mitigation techniques like forwarding and branch prediction." name="description"/>
+<meta content="Anurag Gupta" name="author"/>
+<meta content="Pipeline RISC Architecture on FPGA" property="og:title"/>
+<meta content="Personal website" property="og:type"/>
+<meta content="http://www.anuragg.in" property="og:url"/>
+<meta content="Pipeline RISC Architecture on FPGA" property="og:description"/>
+<meta content="images/anurag.png" property="og:image"/>
+<meta content="Anurag Gupta" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="images/anurag.png" name="twitter:image"/>
+<meta content="Pipeline RISC Architecture on FPGA" name="twitter:title"/>
+<meta content="This project involved the design of a 6-stage pipelined processor based on a provided instruction set architecture. The processor, a 16-bit computer, follows the Little Computer Architecture and is designed to optimize performance through hazard mitigation techniques like forwarding and branch prediction." name="twitter:description"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="https://www.anuragg.in/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 <div class="wrapper">
-  <div class="docs-nav-container">
-    <ul class="docs-nav">
-      <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
-      </li>
-    </ul>
-  </div>
-  <div class="docs-content">
-                <h1>Pipeline RISC architecture on FPGA</h1>
-    <p>The project was to design a 6 stage pipelined processor whose instruction set architecture was provided as a part of the course project. It was a 16-bit very simple computer developed for teaching that was based on the Little Computer Architecture. It used an 8-register, 16-bit computer system. It followed the standard 6 stage pipelines (Instruction fetch, instruction decode, register read, execute, memory access, and write back). The overall architecture was to be optimized for performance, i.e., should include hazard mitigation techniques. Hence, it should have forwarding and branch prediction technique.</p>
-    <figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/assignment-2-pipelined-risc-iitb.pdf">Problem statement.pdf</a></figcaption></figure>
-    <h2>Strategy</h2>
-    <p>
+<div class="docs-nav-container">
+<ul class="docs-nav">
+<li>
+<a href="https://www.anuragg.in"><strong>Home</strong></a>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<h1>Pipeline RISC architecture on FPGA</h1>
+<p>The project was to design a 6 stage pipelined processor whose instruction set architecture was provided as a part of the course project. It was a 16-bit very simple computer developed for teaching that was based on the Little Computer Architecture. It used an 8-register, 16-bit computer system. It followed the standard 6 stage pipelines (Instruction fetch, instruction decode, register read, execute, memory access, and write back). The overall architecture was to be optimized for performance, i.e., should include hazard mitigation techniques. Hence, it should have forwarding and branch prediction technique.</p>
+<figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/assignment-2-pipelined-risc-iitb.pdf">Problem statement.pdf</a></figcaption></figure>
+<h2>Strategy</h2>
+<p>
     	In order to simplify the problem, first a non-pipeline version of the datapath and control path was designed. Then, the non-pipeline datapath was split into 6 stages mentioned in the problem statement. Additional logics, registers and functional unit were inserted to facilitate pipeline processing. Finally a hazard mitigation routine to stop / break the flow of data in the event of data unavailability / jump statements were introduced for the control path.
     </p>
-    <h2>Design stage - Non pipeline</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page1.jpg"/></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page2.jpg"/></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page3.jpg"/></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page4.jpg"/></figure>
-    <h2>Design stage - Pipeline</h2>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page1.jpg"/></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page2.jpg"/></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page3.jpg"/></figure>
-    <figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page4.jpg"/></figure>
-    <h2>Acknowledgement</h2>
-    <p>I would like to thank Shubham Chandak and Situ Gupta who, as a part of three member team, contributed effortlessly to the project.</p>
-    <h2>Author</h2>
-    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+<h2>Design stage - Non pipeline</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page1.jpg"/></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page2.jpg"/></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page3.jpg"/></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg1/file-page4.jpg"/></figure>
+<h2>Design stage - Pipeline</h2>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page1.jpg"/></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page2.jpg"/></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page3.jpg"/></figure>
+<figure><img class="image-border" src="https://www.anuragg.in/images/pipeline_risc_architecture/assg2/file-page4.jpg"/></figure>
+<h2>Acknowledgement</h2>
+<p>I would like to thank Shubham Chandak and Situ Gupta who, as a part of three member team, contributed effortlessly to the project.</p>
+<h2>Author</h2>
+<p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>
 <script src="blog.js"></script>
-</body>
+</div></body>
 </html>
-

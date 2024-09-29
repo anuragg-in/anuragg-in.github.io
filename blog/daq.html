@@ -1,52 +1,49 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='geo.region' content='IN-DL'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='blog.css'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
-
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
-    <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
-    <meta name="author" content="Anurag Gupta">
-
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay">
-    <meta property="og:type" content="Personal website">
-    <meta property="og:url" content="http://www.anuragg.in">
-    <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
-    <meta property="og:image" content="images/anurag.png">
-    <meta property="og:site_name" content="Anurag Gupta">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="images/anurag.png">
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay">
-    <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
+<meta charset="utf-8"/>
+<meta content="IN-DL" name="geo.region"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Data Acquisition System for Epstein Tester</title>
+<meta content="Epstein tester data acquisition system B-H loop characteristics AD7768 ADC DE0 Nano FPGA UART protocol magnetic materials characterization B-H waveform block diagram noise in circuits" name="keywords"/>
+<meta content="This project focuses on developing a data acquisition system for the Epstein tester, a device used to characterize magnetic materials by analyzing their B-H loop characteristics. The project aims to enhance the setup by integrating a built-in module that reduces reliance on bulky external components. The system utilizes an AD7768 ADC for 24-bit resolution at 256,000 samples per second and a DE0 Nano FPGA board for data transfer to a PC via UART protocol." name="description"/>
+<meta content="Anurag Gupta" name="author"/>
+<meta content="Data Acquisition System for Epstein Tester" property="og:title"/>
+<meta content="Personal website" property="og:type"/>
+<meta content="http://www.anuragg.in" property="og:url"/>
+<meta content="Data Acquisition System for Epstein Tester" property="og:description"/>
+<meta content="images/anurag.png" property="og:image"/>
+<meta content="Anurag Gupta" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="images/anurag.png" name="twitter:image"/>
+<meta content="Data Acquisition System for Epstein Tester" name="twitter:title"/>
+<meta content="This project focuses on developing a data acquisition system for the Epstein tester, a device used to characterize magnetic materials by analyzing their B-H loop characteristics. The project aims to enhance the setup by integrating a built-in module that reduces reliance on bulky external components. The system utilizes an AD7768 ADC for 24-bit resolution at 256,000 samples per second and a DE0 Nano FPGA board for data transfer to a PC via UART protocol." name="twitter:description"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="https://www.anuragg.in/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 <div class="wrapper">
-  <div class="docs-nav-container">
-    <ul class="docs-nav">
-      <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
-      </li>
-    </ul>
-  </div>
-  <div class="docs-content">
-                <h1>Data acquisition system for Epstein tester</h1>
-    <p>Epstein tester is a device use to characterize magnetic materials by studying its B-H loop characteristics. Currently, the hardware available in lab requires an oscilloscope to plot the B-H loop and fetch the data to an external system. This makes the overall setup bulky and uneconomical. This project aims to provide a built-in module for the setup to distend its features by suppressing the requirement of large no. of external components.<br/>
+<div class="docs-nav-container">
+<ul class="docs-nav">
+<li>
+<a href="https://www.anuragg.in"><strong>Home</strong></a>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<h1>Data acquisition system for Epstein tester</h1>
+<p>Epstein tester is a device use to characterize magnetic materials by studying its B-H loop characteristics. Currently, the hardware available in lab requires an oscilloscope to plot the B-H loop and fetch the data to an external system. This makes the overall setup bulky and uneconomical. This project aims to provide a built-in module for the setup to distend its features by suppressing the requirement of large no. of external components.<br/>
     	The data acquisition hardware was built using an external ADC, viz. AD7768, offering 24 bit resolution at the maximum rate of 256000 samples per second. DE0 Nano FPGA board was used for fetching the data from ADC and transferring it to PC using UART protocol.</p>
-    <h2>Block diagram</h2>
-    <figure><img src="https://www.anuragg.in/images/daq/block_diagram.svg" width="200%"/><figcaption>Block diagram</figcaption></figure>
-    <h2>Results</h2>
-    <figure><img src="https://www.anuragg.in/images/daq/b-h-waveform.png"/><figcaption>B, H waveform at 49 Hz in time domain (15620 samples per second)</figcaption></figure>
-    <figure><img src="https://www.anuragg.in/images/daq/b-h-loop.png"/><figcaption>B-H loop at 49 Hz (15620 samples per second)</figcaption></figure>
-    <p>Slight non-overlapping regions for multiple cycle results from external noise in the circuit.</p>
-    <h2>Author</h2>
-    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+<h2>Block diagram</h2>
+<figure><img src="https://www.anuragg.in/images/daq/block_diagram.svg" width="200%"/><figcaption>Block diagram</figcaption></figure>
+<h2>Results</h2>
+<figure><img src="https://www.anuragg.in/images/daq/b-h-waveform.png"/><figcaption>B, H waveform at 49 Hz in time domain (15620 samples per second)</figcaption></figure>
+<figure><img src="https://www.anuragg.in/images/daq/b-h-loop.png"/><figcaption>B-H loop at 49 Hz (15620 samples per second)</figcaption></figure>
+<p>Slight non-overlapping regions for multiple cycle results from external noise in the circuit.</p>
+<h2>Author</h2>
+<p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>
 <script src="blog.js"></script>
-</body>
+</div></body>
 </html>
-

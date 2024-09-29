@@ -1,58 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='geo.region' content='IN-DL'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <link rel='stylesheet' href='blog.css'>
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
-
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
-    <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
-    <meta name="author" content="Anurag Gupta">
-
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay">
-    <meta property="og:type" content="Personal website">
-    <meta property="og:url" content="http://www.anuragg.in">
-    <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
-    <meta property="og:image" content="images/anurag.png">
-    <meta property="og:site_name" content="Anurag Gupta">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="images/anurag.png">
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay">
-    <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living.">
+<meta charset="utf-8"/>
+<meta content="IN-DL" name="geo.region"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shape Formation Using Kilobots</title>
+<meta content="Kilobots shape formation collective robotics finite state machine algorithm differential drive locomotion localization collaboration self-organizing systems Harvard University" name="keywords"/>
+<meta content="This project, part of lab work (SC 626), focuses on utilizing Kilobots to collaboratively form specified shapes. Guided by Prof. Leena Vachhani and Prof. Arpita Sinha, the project leverages Kilobots, low-cost robots designed at Harvard University's Self-organizing Systems Research Lab, which possess features like differential drive locomotion and on-board computation. The algorithm developed employs a finite state machine framework, incorporating an orbiting algorithm and a localization mechanism. The project outcomes are detailed in a report and presentation, with a flowchart illustrating the shape formation algorithm and a demonstration video showcasing the functionality." name="description"/>
+<meta content="Anurag Gupta" name="author"/>
+<meta content="Shape Formation Using Kilobots" property="og:title"/>
+<meta content="Personal website" property="og:type"/>
+<meta content="http://www.anuragg.in" property="og:url"/>
+<meta content="Shape Formation Using Kilobots" property="og:description"/>
+<meta content="images/anurag.png" property="og:image"/>
+<meta content="Anurag Gupta" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="images/anurag.png" name="twitter:image"/>
+<meta content="Shape Formation Using Kilobots" name="twitter:title"/>
+<meta content="This project, part of lab work (SC 626), focuses on utilizing Kilobots to collaboratively form specified shapes. Guided by Prof. Leena Vachhani and Prof. Arpita Sinha, the project leverages Kilobots, low-cost robots designed at Harvard University's Self-organizing Systems Research Lab, which possess features like differential drive locomotion and on-board computation. The algorithm developed employs a finite state machine framework, incorporating an orbiting algorithm and a localization mechanism. The project outcomes are detailed in a report and presentation, with a flowchart illustrating the shape formation algorithm and a demonstration video showcasing the functionality." name="twitter:description"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="https://www.anuragg.in/favicon.ico" rel="icon" type="image/x-icon"/>
 </head>
 <body>
 <div class="wrapper">
-  <div class="docs-nav-container">
-    <ul class="docs-nav">
-      <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
-      </li>
-    </ul>
-  </div>
-  <div class="docs-content">
-                <h1>Shape formation using Kilobots</h1>
-    <p>This project was undertaken as a part of lab work (SC 626) under the guidance of Prof. Leena Vachhani and Prof. Arpita Sinha.</p>
-    <figure><img class="image-border portrait" src="https://www.anuragg.in/images/kilobotics/kilobot.jpg"/><figcaption>Kilobot</figcaption></figure>
-    <p>Kilobots are low cost robots designed at Harvard University's Self-organizing Systems Research Lab. Though the Kilobots are low-cost, they maintain abilities similar to other collective robots. These abilities include differential drive locomotion, on-board computation power, neighbor-to-neighbor communication, neighbor-to neighbor distance sensing, and ambient light sensing. Additionally, they are designed to operate such that no robot requires any individual attention by a human operator. This makes controlling a group of Kilobots easy, whether there are 10 or 1000 in the group.<br/>
+<div class="docs-nav-container">
+<ul class="docs-nav">
+<li>
+<a href="https://www.anuragg.in"><strong>Home</strong></a>
+</li>
+</ul>
+</div>
+<div class="docs-content">
+<h1>Shape formation using Kilobots</h1>
+<p>This project was undertaken as a part of lab work (SC 626) under the guidance of Prof. Leena Vachhani and Prof. Arpita Sinha.</p>
+<figure><img class="image-border portrait" src="https://www.anuragg.in/images/kilobotics/kilobot.jpg"/><figcaption>Kilobot</figcaption></figure>
+<p>Kilobots are low cost robots designed at Harvard University's Self-organizing Systems Research Lab. Though the Kilobots are low-cost, they maintain abilities similar to other collective robots. These abilities include differential drive locomotion, on-board computation power, neighbor-to-neighbor communication, neighbor-to neighbor distance sensing, and ambient light sensing. Additionally, they are designed to operate such that no robot requires any individual attention by a human operator. This makes controlling a group of Kilobots easy, whether there are 10 or 1000 in the group.<br/>
     In this project, we designed an algorithm for Kilobots to collaboratively form a given shape. A finite state machine based framework was utilized to breakdown the problem into two essential components. The first component comprised of an orbiting algorithm to allow Kilobots to reach their desired location, and the second, a localization mechanism to identify its relative position. Interested readers are referred to the report below for more details.</p>
-    <figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/kilobotics.pdf">Report.pdf</a></figcaption></figure>
-    <p>Alternatively, one can refer to the presentation slides focused towards shape formation algorithm. It includes most of the building blocks required for shape formation followed by demonstration of individual blocks.</p>
-    <figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/kilobotics_ppt.pdf">Presentation.pdf</a></figcaption></figure>
-    <h2>Flowchart</h2>
-    <figure><img src="https://www.anuragg.in/images/kilobotics/shape_formation.png"/><figcaption>Algorithm for shape formation using Kilobots</figcaption></figure>
-    <h2>Demonstration</h2>
-    <p>In the video, three Kilobots are used as reference (guides) for coordinate axis. Other Kilobots (builders) start their journey near the bottom left of the screen and orbit around the guides to reach their desired location. After having established themselves, builders transform themselves into guide and help in navigation of oncoming builders.</p>
-    <iframe src="https://www.youtube.com/embed/SoDq9GQvNAE?rel=0"></iframe><figcaption>Rectangle shape formation of length=3 and width=2</figcaption>
-    <h2>Acknowledgement</h2>
-    <p>I would like to thank Sudhakar Kumar, Eswara Srisai, and Kishan Chouhan who, as a part of four member team, played an essential part in success of the project.</p>
-    <h2>Author</h2>
-    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+<figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/kilobotics.pdf">Report.pdf</a></figcaption></figure>
+<p>Alternatively, one can refer to the presentation slides focused towards shape formation algorithm. It includes most of the building blocks required for shape formation followed by demonstration of individual blocks.</p>
+<figure><img src="https://www.anuragg.in/images/file.png"/><figcaption><a href="https://www.anuragg.in/files/kilobotics_ppt.pdf">Presentation.pdf</a></figcaption></figure>
+<h2>Flowchart</h2>
+<figure><img src="https://www.anuragg.in/images/kilobotics/shape_formation.png"/><figcaption>Algorithm for shape formation using Kilobots</figcaption></figure>
+<h2>Demonstration</h2>
+<p>In the video, three Kilobots are used as reference (guides) for coordinate axis. Other Kilobots (builders) start their journey near the bottom left of the screen and orbit around the guides to reach their desired location. After having established themselves, builders transform themselves into guide and help in navigation of oncoming builders.</p>
+<iframe src="https://www.youtube.com/embed/SoDq9GQvNAE?rel=0"></iframe><figcaption>Rectangle shape formation of length=3 and width=2</figcaption>
+<h2>Acknowledgement</h2>
+<p>I would like to thank Sudhakar Kumar, Eswara Srisai, and Kishan Chouhan who, as a part of four member team, played an essential part in success of the project.</p>
+<h2>Author</h2>
+<p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>
 <script src="blog.js"></script>
-</body>
+</div></body>
 </html>
-
