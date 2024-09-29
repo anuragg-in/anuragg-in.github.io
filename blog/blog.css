@@ -1,0 +1,389 @@
+body{
+  background-color: #ccc;
+  font-family: "Raleway", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: left;
+  line-height: 1.9em;
+  color: #222;
+  font-size: 18px;
+  font-weight: 300;
+}
+.wrapper
+{
+  /* margin: 20px 36px; */
+  margin: auto;
+  background-color: white;
+  border-radius:4px;
+  box-shadow:0 0 2px 2px rgba(155,155,155,0.5);
+  border:4px solid #b9b9b9;
+  padding: 40px 20px;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  max-width: 1400px;
+  box-sizing: border-box; /* Ensures padding is compensated in the width */
+}
+.docs-nav-container, .docs-content-container
+{
+  display: inline-flex;
+  margin: 0;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding is compensated in the width */
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+}
+.docs-nav {
+  background-color: #f5f5f5;
+  list-style: none;
+  font-size: 1em;
+  padding: 15px 20px;
+  width: 200px;
+  height: auto;
+  /* border: 1px solid black; */
+}
+.docs-content
+{
+  /* margin: 0 0 0 310px; */
+  padding: 0 20px;
+  /* flex: 1; */
+  /* border: 1px solid black; */
+}
+hr
+{
+  border: none; /* Remove default border */
+  border-top: 2px dotted #000; /* Top border with color and thickness */
+  margin: 20px 0; /* Space above and below the <hr> */
+  opacity: 0.4; /* Transparency level */
+}
+a {
+  color: #25a;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+.docs-nav a {
+  color: #333;
+  display: block;
+  margin: 0 -20px;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-right: 2px solid transparent;
+}
+.docs-nav a:hover {
+  background: black;
+  color: white;
+}
+b, strong
+{
+  font-weight: 590;
+}
+h1
+{
+  font-size: 1.8em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6
+{
+  /* color: #212121; */
+  /* margin: 10px 0; */
+  font-weight: 500;
+}
+h2
+{
+  font-size: 1.4em;
+  /* border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  line-height: 1.4em;
+  font-weight: 400; */
+}
+h3
+{
+  font-size: 1.1em;
+  font-weight: 400;
+}
+label
+{
+  font-weight: 350;
+}
+label::after
+{
+  /* content: ":"; */
+}
+label[data-label="fee-info"]::after
+{
+  content: "Fees:";
+}
+label[data-label="accessibility-info"]::after
+{
+  content: "How to reach?";
+}
+figure
+{
+  margin: 0.2em 0;
+  text-align: center;
+}
+img
+{
+  max-width: 450px;
+  max-width: 100%;
+  /* width: 100%; */
+  border-radius: 10px;
+}
+.logo
+{
+  width: 350px;
+}
+.screenshot
+{
+  border: 1px dotted black;
+  width: 700px;
+}
+.map-logo{
+  width: 12px;
+  height: 16px;
+  margin-right: 8px;
+  margin-left: 2px;
+}
+h3 .map-logo{
+  width: 14px;
+  height: 19px;
+  /* margin-right: 8px;
+  margin-left: 2px; */
+}
+figcaption
+{
+  color: #050;
+}
+
+.grid-image {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the images */
+}
+
+.grid-image figure {
+  /* position: relative; */
+  margin: 5px; /* Space between images */
+  flex: 1 1 400px; /* Flex-grow, flex-shrink, and basis */
+  text-align: center; /* Center the caption */
+  max-width: 400px;
+}
+
+.grid-image img
+{
+  /* max-width: 300px
+  width: 100%;  */
+  max-width: 100%; /* Responsive */
+            height: auto; /* Maintain aspect ratio */
+}
+/* .caption {
+  grid-column: 1 / -1;
+  text-align: center;
+  display: block;
+} */
+
+/* .subcaption {
+  display: none;
+} */
+
+.network {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    border: none; /* Remove border to eliminate extra space */
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1000px){
+  /* .grid-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  } */
+  .wrapper{
+    padding: 20px;
+    margin: 5px;
+  }
+  .docs-nav{
+    display: none;
+  }
+  .docs-content
+  {
+    margin: 0 0 0 0;
+  }
+  .figure-container {
+      flex-wrap: wrap; /* Allows images to overflow into new rows */
+  }
+}
+
+@media (max-width: 600px)
+{
+  figure
+  {
+    margin: 15px 0px;
+    text-align: center;
+  }
+  /* .grid-image
+  {
+    display: block;
+  } */
+  /* .caption
+  {
+    display: none;
+  }
+  .subcaption
+  {
+    display: block;
+  } */
+}
+
+/******************* START: READER COMMENTS **********************/
+/* General styles for the reader-comments div */
+
+
+/* Heading style */
+#reader-comments h3 {
+    /* font-size: 24px; */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Comment form style */
+#new-comment {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#submit-comment {
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-comment:hover {
+    background-color: #0056b3;
+}
+
+/* Comment container */
+.comment {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Timestamp style */
+.comment .timestamp {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Comment text style */
+.comment .text {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Reply button style */
+.reply-button {
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Base Reply style */
+.comment.reply {
+    /* margin-left: 30px; /* Indent reply */ */
+    border-left: 3px solid #ddd;
+    padding-left: 15px;
+}
+
+/* Alternating background colors based on the level of reply */
+.comment.reply.level-even {
+    background-color: #f0f0f0; /* Light grey */
+}
+
+.comment.reply.level-odd {
+    background-color: #e0e0e0; /* Slightly darker grey */
+}
+
+/******* START: MAPS *******/
+.map {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+#map-overall
+{
+  height: 350px;
+}
+/******* END: MAPS *******/
+
+/******* START: SLIDES *******/
+.slide-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.slides {
+    display: none;
+    width: 100%;
+}
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.thumbnail {
+    cursor: pointer;
+    width: 60px;
+    margin: 0 5px;
+}
+.left, .right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    user-select: none;
+    transition: 0.6s ease;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+.left:hover, .right:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/******* END: SLIDES *******/

@@ -1,0 +1,17 @@
+<h1>Support Vector Machine (SVM) using log-barrier method</h1>
+<p>
+	This project was undertaken as a part of course (Convex optimization) requirement under the guidance of Prof. Kunal N. Chaudhary.<br>
+	SVM is a popular classification algorithm utilized in applications of artificial intelligence to separate dissimilar data. Given a two class training dataset, SVM generates an optimal separating hyperplane (by maximizing the margin) to sequester two class of data using a constrained quadratic convex optimization formulation.
+</p>
+<figure><img class="image-border" src="images/svm_log_barrier_method/svm_maximizing_margin.png"></img><figcaption>Optimal hyperplane and margin hyperplane obtained using SVM optimization problem</figcaption></figure>
+<p>
+	Log-barrier method is an interior point method used to convert an inequality constrained optimization problem to an approximate constrained problem using a logarithmic penalty function. The solution for the latter problem asymptotically converges to true solution as the value of a parameter (<i>t</i>) in the penalty function is made arbitrarily large.
+</p>
+<figure><img class="image-border" src="images/svm_log_barrier_method/approximate_indicator_function.png"></img><figcaption>Approximate penalty function for increasing value of <i>t</i></t></figcaption></figure>
+<p>
+	If we use very large value of <i>t</i> to run our optimization, we get poor results due to large value of Hessian of objective function at the boundary of solution space. Hence, optimization is run multiple times with increasing value of <i>t</i>. Solution from previous iteration is used as starting point for current iteration. This technique is known as central path method.
+</p>
+<figure><img src = "images/file.png"></img><figcaption><a href = "files/svm using log barrier method.pdf">Presentation.pdf</a></figcaption></figure>
+<h2>Results</h2>
+<figure><img class="image-border" src="images/svm_log_barrier_method/separating_hyperplane_linearly_separable_data_log_barrier_method_multiple_t.png"></img><figcaption>Optimal hyperplane for linearly separable data obtained from SVM optimization problem after incorporating the concept of log-barrier method and central path (<i>t</i> is the parameter of penalty function. Larger the value of t, better the result obtained using central path.)</figcaption></figure>
+<figure><img class="image-border" src="images/svm_log_barrier_method/separating_hyperplane_linearly_inseparable_data_log_barrier_method_multiple_t.png"></img><figcaption>Optimal hyperplane for linearly inseparable data obtained from SVM optimization problem after incorporating the concept of log-barrier method and central path (<i>t</i> is the parameter of penalty function. Larger the value of t, better the result obtained using central path.)</figcaption></figure>

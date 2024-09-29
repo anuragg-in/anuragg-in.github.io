@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name='geo.region' content='IN-DL'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='blog.css'>
+</head>
+<body>
+<div class="wrapper">
+  <div class="docs-nav-container">
+    <ul class="docs-nav">
+      <li>
+        <a href='https://www.anuragg.in'><strong>Home</strong></a>
+      </li>
+    </ul>
+  </div>
+  <div class="docs-content">
+                <h1>Shape formation using Kilobots</h1>
+    <p>This project was undertaken as a part of lab work (SC 626) under the guidance of Prof. Leena Vachhani and Prof. Arpita Sinha.</p>
+    <figure><img class = "image-border portrait" src = "../images/kilobotics/kilobot.jpg"></img><figcaption>Kilobot</figcaption></figure>
+    <p>Kilobots are low cost robots designed at Harvard University's Self-organizing Systems Research Lab. Though the Kilobots are low-cost, they maintain abilities similar to other collective robots. These abilities include differential drive locomotion, on-board computation power, neighbor-to-neighbor communication, neighbor-to neighbor distance sensing, and ambient light sensing. Additionally, they are designed to operate such that no robot requires any individual attention by a human operator. This makes controlling a group of Kilobots easy, whether there are 10 or 1000 in the group.<br>
+    In this project, we designed an algorithm for Kilobots to collaboratively form a given shape. A finite state machine based framework was utilized to breakdown the problem into two essential components. The first component comprised of an orbiting algorithm to allow Kilobots to reach their desired location, and the second, a localization mechanism to identify its relative position. Interested readers are referred to the report below for more details.</p>
+    <figure><img src = "../images/file.png"></img><figcaption><a href = "../files/kilobotics.pdf">Report.pdf</a></figcaption></figure>
+    <p>Alternatively, one can refer to the presentation slides focused towards shape formation algorithm. It includes most of the building blocks required for shape formation followed by demonstration of individual blocks.</p>
+    <figure><img src = "../images/file.png"></img><figcaption><a href = "../files/kilobotics_ppt.pdf">Presentation.pdf</a></figcaption></figure>
+    <h2>Flowchart</h2>
+    <figure><img src = "../images/kilobotics/shape_formation.png"></img><figcaption>Algorithm for shape formation using Kilobots</figcaption></figure>
+    <h2>Demonstration</h2>
+    <p>In the video, three Kilobots are used as reference (guides) for coordinate axis. Other Kilobots (builders) start their journey near the bottom left of the screen and orbit around the guides to reach their desired location. After having established themselves, builders transform themselves into guide and help in navigation of oncoming builders.</p>
+    <iframe src="../https://www.youtube.com/embed/SoDq9GQvNAE?rel=0"></iframe><figcaption>Rectangle shape formation of length=3 and width=2</figcaption></figure>
+    <h2>Acknowledgement</h2>
+    <p>I would like to thank Sudhakar Kumar, Eswara Srisai, and Kishan Chouhan who, as a part of four member team, played an essential part in success of the project.</p>
+    <h2>Author</h2>
+    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+</div>
+<script src="blog.js"></script>
+</body>
+</html>
+

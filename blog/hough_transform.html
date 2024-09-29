@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'>
+    <meta name='geo.region' content='IN-DL'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='blog.css'>
+</head>
+<body>
+<div class="wrapper">
+  <div class="docs-nav-container">
+    <ul class="docs-nav">
+      <li>
+        <a href='https://www.anuragg.in'><strong>Home</strong></a>
+      </li>
+    </ul>
+  </div>
+  <div class="docs-content">
+                <h1>Generalized Hough transform</h1>
+    	<p>Hough transform was originally proposed to detect circles in an image. It was later improvised to detect all parameteric shapes. The procedure is to find imperfect instances of objects within a certain class of shapes by a voting procedure. The voting is carried out in parameter space from which the object candidates are obtained as local maxima in accumulator space. This project further extends the algorithm to detect any arbitrary, non-parameteric shapes with different scaling. It uses gradient information around the centroid of the non-parameteric shape to accumulate bin array. Thresholding the bin array gives the centroid of detected shape.</p>
+    <h2>Block diagram</h2>
+    	<figure><img src = "../images/hough_transform/block_diagram.svg"></img><figcaption>Block diagram</figcaption></figure>
+    <h2>Non-parameteric shape</h2>
+    	<figure><img class = "image-border" src = "../images/hough_transform/shape.png"></img><figcaption>Shape to be detected</figcaption></figure>
+    <h2>Input</h2>
+    	<figure><img class = "image-border" src = "../images/hough_transform/image.png"></img><figcaption>Input image with salt and pepper noise</figcaption></figure>
+    <h2>Output</h2>
+    	<figure><img class = "image-border" src = "../images/hough_transform/detected_image.png"></img><figcaption>Detected image</figcaption></figure>
+    <h2>Reference</h2>
+    <p><a href = "../http://www.sciencedirect.com/science/article/pii/0031320381900091" target="_blank">Generalizing the Hough transform to detect arbitrary shape, DH Ballard (1981)</a></p>
+    <h2>Author</h2>
+    <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
+</div>
+<script src="blog.js"></script>
+</body>
+</html>
+
