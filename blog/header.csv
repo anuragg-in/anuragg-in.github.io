@@ -1,0 +1,8 @@
+[
+  {
+    "filename": "shape_formation_using_kilobots.html",
+    "title": "Shape formation using Kilobots",
+    "description": "we designed an algorithm for Kilobots to collaboratively form a given shape. A finite state machine based framework was utilized to breakdown the problem",
+    "keywords": "Shape formation,Kilobots,Decentralized control"
+  }
+]
