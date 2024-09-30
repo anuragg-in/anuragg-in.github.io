@@ -157,7 +157,7 @@
   },
   {
     "filename": "stereovision.html",
-    "title": "Stereovision Using More Than Two Image Sets",
+    "title": "Stereovision Using More Than Two Images",
     "description": "This project explores a method to extract depth info from multiple image sets, averaging depth maps to enhance accuracy and reduce unresolved pixels.",
     "keywords": [
       "stereovision",
