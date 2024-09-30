@@ -1,6 +1,6 @@
 [
   {
-      "filename": "search_engine_optimization.html"
+      "filename": "search_engine_optimization.html",
       "title": "Search Engine Optimization: Best Practices",
       "description": "Discover essential SEO practices, web tools, and tips for optimizing your site, ensuring crawlability, and enhancing user engagement.",
       "keywords": [
@@ -18,7 +18,7 @@
         "Rich Content",
         "Keyword Research Tools"
       ]
-    },
+  },
   {
     "filename": "eclipse_attack_detection_blockchain_network.html",
     "title": "Eclipse Attack Detection on a Blockchain Network",
