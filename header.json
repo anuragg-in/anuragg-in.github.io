@@ -1,5 +1,25 @@
 [
   {
+      "filename": "search_engine_optimization.html"
+      "title": "Search Engine Optimization: Best Practices",
+      "description": "Discover essential SEO practices, web tools, and tips for optimizing your site, ensuring crawlability, and enhancing user engagement.",
+      "keywords": [
+        "Search Engine Optimization",
+        "SEO Best Practices",
+        "Site Audit Tools",
+        "Meta Tags",
+        "Canonical Links",
+        "Mobile-Friendly Websites",
+        "Sitemaps",
+        "IndexNow",
+        "Google Business Profile",
+        "Geolocation for SEO",
+        "Crawlability",
+        "Rich Content",
+        "Keyword Research Tools"
+      ]
+    },
+  {
     "filename": "eclipse_attack_detection_blockchain_network.html",
     "title": "Eclipse Attack Detection on a Blockchain Network",
     "description": "A non-parametric algorithm detects eclipse attacks in blockchain networks using mean, variance, and smart contracts for a tamper-proof solution.",
