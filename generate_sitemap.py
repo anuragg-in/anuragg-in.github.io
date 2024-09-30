@@ -42,13 +42,17 @@ def generate_sitemap():
         # List files in the directory (do not go into subdirectories)
         for filename in os.listdir(directory):
             if filename.endswith('.html'):
-                # Generate the relative path and create the full URL
-                relative_path = os.path.relpath(os.path.join(directory, filename), os.getcwd()).replace("\\", "/")
-                full_url = base_url + relative_path
+                if(filename=='index'):
+                    url_element = create_url_element('https://www.anuragg.in/')
+                    urlset.append(url_element)
+                else:
+                    # Generate the relative path and create the full URL
+                    relative_path = os.path.relpath(os.path.join(directory, filename), os.getcwd()).replace("\\", "/")
+                    full_url = base_url + relative_path
 
-                # Append the URL element to the sitemap
-                url_element = create_url_element(full_url)
-                urlset.append(url_element)
+                    # Append the URL element to the sitemap
+                    url_element = create_url_element(full_url)
+                    urlset.append(url_element)
 
     # Indent the XML for proper formatting
     indent(urlset)

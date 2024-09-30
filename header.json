@@ -17,8 +17,8 @@
   },
   {
     "filename": "controlling_transaction_rate_tangle.html",
-    "title": "Controlling Transaction Rate in Tangle Ledger: A Principal-Agent Approach",
-    "description": "This paper presents a PAP framework for Tangle that adjusts PoW difficulty based on agents' computing power, enhancing security and stabilizing transaction rates.",
+    "title": "Controlling Transaction Rate in Tangle Ledger",
+    "description": "This paper presents a Principal-Agent problem framework for to adjusts PoW difficulty based on agents' computing power in Tangle ledger.",
     "keywords": [
         "Tangle ledger",
         "distributed ledger",
@@ -39,7 +39,7 @@
   {
     "filename": "books.html",
     "title": "Favorite Quotes and Recommended Books",
-    "description": "Discover impactful quotes from books like Man's Search for Meaning and And Every Morning the Way Home Gets Longer and Longer, plus recommended reads by Fredrik Backman, Markus Zusak, and Khaled Hosseini.",
+    "description": "Discover impactful quotes from books like Man's Search for Meaning and And Every Morning the Way Home Gets Longer and Longer, plus recommended reads.",
     "keywords": [
       "favorite book quotes",
       "recommended books",
@@ -90,7 +90,7 @@
   {
     "filename": "daq.html",
     "title": "Data Acquisition System for Epstein Tester",
-    "description": "This project develops a data acquisition system for the Epstein tester, enhancing it with a built-in module, an AD7768 ADC, and a DE0 Nano FPGA for data transfer.",
+    "description": "This project develops a data acquisition system for the Epstein tester, enhancing it with a built-in module, an AD7768 ADC, and a DE0 Nano FPGA.",
     "keywords": [
       "Epstein tester",
       "data acquisition system",
@@ -107,7 +107,7 @@
   {
     "filename": "connectivity_in_nanowire.html",
     "title": "Measurement of Connectivity in Nanowire Network",
-    "description": "This project designs an interface between a Keithley SMU and LabVIEW for two- and four-probe measurements of nanowire networks, including statistical analysis using ImageJ.",
+    "description": "This project designs an interface between a Keithley SMU and LabVIEW for two- and four-probe measurements of nanowire networks.",
     "keywords": [
       "nanowire network",
       "Keithley SMU",
@@ -124,7 +124,7 @@
   {
     "filename": "coins.html",
     "title": "Special Edition Coins",
-    "description": "Explore special edition coins that celebrate milestones in Indian history, including the UN's 50th anniversary, the Dandi March's 75th year, and Motilal Nehru's 150th birthday.",
+    "description": "Explore special edition coins that celebrate milestones in Indian history, including the UN's 50th anniversary, the Dandi March's 75th year, etc.",
     "keywords": [
       "special edition coins",
       "Indian history coins",
@@ -174,7 +174,7 @@
   {
     "filename": "svm_log_barrier_method.html",
     "title": "Support Vector Machine (SVM) Using Log-Barrier Method",
-    "description": "This project explores using Support Vector Machines (SVM) for classification, employing the log-barrier method to optimize hyperplane placement for various data types.",
+    "description": "This project explores Support Vector Machines (SVM) for classification, employing the log-barrier method to optimize hyperplane placement.",
     "keywords": [
       "Support Vector Machine",
       "SVM",
@@ -282,7 +282,7 @@
   {
     "filename": "photography.html",
     "title": "Memorable Moments: A Photo Collection from My Travels",
-    "description": "A collection of photographs capturing memorable moments from various locations and experiences.",
+    "description": "Memorable moments: A collection of photographs capturing memorable moments from various locations and experiences.",
     "keywords": [
       "photography",
       "travel",
