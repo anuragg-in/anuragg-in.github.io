@@ -1,5 +1,26 @@
 [
   {
+    "filename": "controlling_transaction_rate_tangle.html",
+    "title": "Controlling Transaction Rate in Tangle Ledger: A Principal-Agent Approach",
+    "description": "This paper introduces a principal-agent problem (PAP) framework to control transaction rates in Tangle, a directed acyclic graph-based distributed ledger. The proposed mechanism assigns proof of work (PoW) difficulty based on agents' computing power, enhancing security and moderating transaction rates. The framework solves a mixed-integer optimization problem, yielding optimal results that incentivize agents to perform challenging PoW and maintain a fair transaction rate across varying computing powers.",
+    "keywords": [
+        "Tangle ledger",
+        "distributed ledger",
+        "Internet of Things",
+        "transaction rate control",
+        "principal-agent problem",
+        "proof of work",
+        "computing power",
+        "PoW difficulty",
+        "optimization",
+        "blockchain alternative",
+        "directed acyclic graph",
+        "security",
+        "transaction dynamics",
+        "ledger technology"
+    ]
+  },
+  {
     "filename": "books.html",
     "title": "Favorite Quotes and Recommended Books",
     "description": "Discover a collection of favorite quotes from impactful books like 'Man's Search for Meaning' and 'And Every Morning the Way Home Gets Longer and Longer.' Plus, explore a curated list of recommended books by renowned authors such as Fredrik Backman, Markus Zusak, and Khaled Hosseini.",
