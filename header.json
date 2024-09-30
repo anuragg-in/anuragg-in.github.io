@@ -1,8 +1,8 @@
 [
   {
-    "filename": "eclipse_attack_detection_blockchain_network.html", 
+    "filename": "eclipse_attack_detection_blockchain_network.html",
     "title": "Eclipse Attack Detection on a Blockchain Network",
-    "description": "A novel non-parametric change detection algorithm is introduced to detect eclipse attacks on a blockchain network. The algorithm relies on empirical mean and variance, utilizing the Johnson-Lindenstrauss lemma for dimensionality reduction and monitoring changes in Fréchet mean and variance to identify attacks. The detector can be implemented as a smart contract, offering a tamper-proof solution.",
+    "description": "A non-parametric algorithm detects eclipse attacks in blockchain networks using mean, variance, and smart contracts for a tamper-proof solution.",
     "keywords": [
       "eclipse attack",
       "blockchain",
@@ -18,7 +18,7 @@
   {
     "filename": "controlling_transaction_rate_tangle.html",
     "title": "Controlling Transaction Rate in Tangle Ledger: A Principal-Agent Approach",
-    "description": "This paper introduces a principal-agent problem (PAP) framework to control transaction rates in Tangle, a directed acyclic graph-based distributed ledger. The proposed mechanism assigns proof of work (PoW) difficulty based on agents' computing power, enhancing security and moderating transaction rates. The framework solves a mixed-integer optimization problem, yielding optimal results that incentivize agents to perform challenging PoW and maintain a fair transaction rate across varying computing powers.",
+    "description": "This paper presents a PAP framework for Tangle that adjusts PoW difficulty based on agents' computing power, enhancing security and stabilizing transaction rates.",
     "keywords": [
         "Tangle ledger",
         "distributed ledger",
@@ -39,7 +39,7 @@
   {
     "filename": "books.html",
     "title": "Favorite Quotes and Recommended Books",
-    "description": "Discover a collection of favorite quotes from impactful books like 'Man's Search for Meaning' and 'And Every Morning the Way Home Gets Longer and Longer.' Plus, explore a curated list of recommended books by renowned authors such as Fredrik Backman, Markus Zusak, and Khaled Hosseini.",
+    "description": "Discover impactful quotes from books like Man's Search for Meaning and And Every Morning the Way Home Gets Longer and Longer, plus recommended reads by Fredrik Backman, Markus Zusak, and Khaled Hosseini.",
     "keywords": [
       "favorite book quotes",
       "recommended books",
@@ -56,7 +56,7 @@
   {
     "filename": "github_website.html",
     "title": "Free Static Website Hosting on GitHub with Custom Domain",
-    "description": "Learn how to host a free static website using GitHub Pages. This guide walks you through setting up a GitHub repository for hosting static content like HTML, CSS, and JavaScript. You'll also learn how to link a custom domain to your GitHub Pages site, making it accessible through a personalized URL.",
+    "description": "Host a free static website using GitHub Pages. This guide covers setting up a repository for HTML, CSS, and JavaScript, and linking a custom domain.",
     "keywords": [
       "free static website hosting",
       "GitHub Pages",
@@ -73,7 +73,7 @@
   {
     "filename": "flyback_converter.html",
     "title": "Flyback Converter Project Overview",
-    "description": "This project, conducted as part of a B.Tech requirement under Prof. Mukul C. Chandorkar at IIT Bombay, focuses on the application of a flyback converter in pre-charging module capacitors for a Modular Multilevel Converter (MMC). It also details the design of a multi-output flyback converter for powering Nixie tubes and microcontrollers. The documentation includes schematics and printed circuit board (PCB) designs.",
+    "description": "This B.Tech project under Prof. Mukul C. Chandorkar at IIT Bombay focuses on using a flyback converter for pre-charging MMC capacitors and powering Nixie tubes.",
     "keywords": [
       "Flyback converter",
       "B.Tech project",
@@ -90,7 +90,7 @@
   {
     "filename": "daq.html",
     "title": "Data Acquisition System for Epstein Tester",
-    "description": "This project focuses on developing a data acquisition system for the Epstein tester, a device used to characterize magnetic materials by analyzing their B-H loop characteristics. The project aims to enhance the setup by integrating a built-in module that reduces reliance on bulky external components. The system utilizes an AD7768 ADC for 24-bit resolution at 256,000 samples per second and a DE0 Nano FPGA board for data transfer to a PC via UART protocol.",
+    "description": "This project develops a data acquisition system for the Epstein tester, enhancing it with a built-in module, an AD7768 ADC, and a DE0 Nano FPGA for data transfer.",
     "keywords": [
       "Epstein tester",
       "data acquisition system",
@@ -107,7 +107,7 @@
   {
     "filename": "connectivity_in_nanowire.html",
     "title": "Measurement of Connectivity in Nanowire Network",
-    "description": "This project focuses on designing an interface between a Keithley Source Measure Unit (SMU) and LabVIEW for two-probe and four-probe measurements of nanowire networks using a probe station. Additionally, it includes an interface for performing voltage and frequency sweeps for small voltage signals using an LCR meter. The project also entails a statistical analysis of the nanowire network's dimensions and electrical properties, utilizing ImageJ software to measure images obtained from Scanning Electron Microscopy (SEM).",
+    "description": "This project designs an interface between a Keithley SMU and LabVIEW for two- and four-probe measurements of nanowire networks, including statistical analysis using ImageJ.",
     "keywords": [
       "nanowire network",
       "Keithley SMU",
@@ -124,7 +124,7 @@
   {
     "filename": "coins.html",
     "title": "Special Edition Coins",
-    "description": "Explore a collection of special edition coins celebrating significant milestones and events in Indian history. This gallery features coins commemorating the 50th anniversary of the United Nations, the 75 years of Dandi March, and the 150th birth anniversary of Motilal Nehru, among others. Each coin represents a unique aspect of India's cultural heritage and historical significance.",
+    "description": "Explore special edition coins that celebrate milestones in Indian history, including the UN's 50th anniversary, the Dandi March's 75th year, and Motilal Nehru's 150th birthday.",
     "keywords": [
       "special edition coins",
       "Indian history coins",
@@ -141,7 +141,7 @@
   {
     "filename": "bread.html",
     "title": "Homemade Bread Recipe",
-    "description": "This comprehensive guide outlines the ingredients and equipment needed to make homemade bread. It covers essential steps such as proofing active dry yeast, making the dough, and baking the bread. Additionally, it provides tips for achieving the perfect texture and explains the differences between baking soda, baking powder, and yeast, along with references to further reading for aspiring bakers.",
+    "description": "This guide covers ingredients and equipment for homemade bread, including proofing yeast, making dough, and baking, plus tips for perfect texture.",
     "keywords": [
       "homemade bread recipe",
       "bread ingredients",
@@ -158,7 +158,7 @@
   {
     "filename": "stereovision.html",
     "title": "Stereovision Using More Than Two Image Sets",
-    "description": "This project explores a method to extract depth information from multiple image sets to enhance the accuracy of depth maps. By averaging depth maps obtained from all valid pairs of images, the project aims to minimize unresolved pixels in the final depth map. A comparison with ground truth data obtained from a depth sensor is also included.",
+    "description": "This project explores a method to extract depth info from multiple image sets, averaging depth maps to enhance accuracy and reduce unresolved pixels.",
     "keywords": [
       "stereovision",
       "depth map extraction",
@@ -174,7 +174,7 @@
   {
     "filename": "svm_log_barrier_method.html",
     "title": "Support Vector Machine (SVM) Using Log-Barrier Method",
-    "description": "This project explores the use of Support Vector Machines (SVM) for classification tasks. The SVM algorithm aims to generate an optimal separating hyperplane by maximizing the margin between two classes in a dataset using a constrained quadratic convex optimization formulation. The project employs the log-barrier method, an interior point approach, to handle inequality constraints in optimization problems, converging to a true solution through iterative adjustments of the penalty function parameter. The results showcase the effectiveness of the log-barrier method and central path technique in optimizing hyperplane placement for both linearly separable and inseparable data.",
+    "description": "This project explores using Support Vector Machines (SVM) for classification, employing the log-barrier method to optimize hyperplane placement for various data types.",
     "keywords": [
       "Support Vector Machine",
       "SVM",
@@ -191,7 +191,7 @@
   {
     "filename": "testing_of_digital_circuits.html",
     "title": "Testing of Digital Circuits Using Beaglebone Black",
-    "description": "This project aims to develop a Python-based software application for the Beaglebone Black to debug and validate mock-up circuit designs on a breadboard. The strategy involves accepting device descriptions, scanning through all possible input sets for combinational circuits, and utilizing the Postman algorithm for state and transition analysis in sequential circuits. Results are displayed on a graphical user interface (GUI) that caters to both combinational and sequential circuits.",
+    "description": "This project develops a Python app for the Beaglebone Black to debug mock circuit designs, using device descriptions and the Postman algorithm with a GUI.",
     "keywords": [
       "Beaglebone Black",
       "digital circuits",
@@ -208,7 +208,7 @@
   {
     "filename": "shape_formation_using_kilobots.html",
     "title": "Shape Formation Using Kilobots",
-    "description": "This project, part of lab work (SC 626), focuses on utilizing Kilobots to collaboratively form specified shapes. Guided by Prof. Leena Vachhani and Prof. Arpita Sinha, the project leverages Kilobots, low-cost robots designed at Harvard University's Self-organizing Systems Research Lab, which possess features like differential drive locomotion and on-board computation. The algorithm developed employs a finite state machine framework, incorporating an orbiting algorithm and a localization mechanism. The project outcomes are detailed in a report and presentation, with a flowchart illustrating the shape formation algorithm and a demonstration video showcasing the functionality.",
+    "description": "This project uses Kilobots to collaboratively form shapes, guided by Prof. Vachhani and Prof. Sinha, with a finite state machine and orbiting algorithm.",
     "keywords": [
       "Kilobots",
       "shape formation",
@@ -225,7 +225,7 @@
   {
     "filename": "sketching.html",
     "title": "Sketching",
-    "description": "This section features various sketches captured through photography, showcasing personal moments and objects of interest. The included images highlight a selfie taken on September 16, 2016, and a photograph of a Sony headphone taken on the same date, reflecting a blend of personal expression and product representation.",
+    "description": "This section features sketches captured through photography, showcasing a selfie and a Sony headphone from September 16, 2016, blending personal moments.",
     "keywords": [
       "sketching",
       "photography",
@@ -240,7 +240,7 @@
   {
     "filename": "shared_economy_for_battery_storage.html",
     "title": "Shared Economy for Battery Storage",
-    "description": "This project explores the concept of shared battery storage as a strategy to minimize exposure to real-time electricity market fluctuations. Under the guidance of Prof. Ankur Kulkarni, the project involved a literature survey of game theoretic models focused on coalition benefits for electricity consumers amid dynamic tariff pricing policies. The findings highlight the advantages of shared battery resources over individual storage solutions, emphasizing long-term cost minimization through optimized battery sizing.",
+    "description": "This project explores shared battery storage to reduce exposure to electricity market fluctuations, highlighting its advantages over individual solutions.",
     "keywords": [
       "shared economy",
       "battery storage",
@@ -255,7 +255,7 @@
   {
     "filename": "resources.html",
     "title": "Interesting Solutions Based on Good Theories",
-    "description": "A collection of resources showcasing interesting solutions based on theoretical frameworks, including participatory budgeting, fair allocation algorithms, and insights into animal behavior. This page provides links to platforms and papers that exemplify these concepts.",
+    "description": "This page features resources on theoretical frameworks, highlighting participatory budgeting, fair allocation algorithms, and animal behavior insights.",
     "keywords": [
       "participatory budgeting",
       "fair allocation",
@@ -268,7 +268,7 @@
   {
     "filename": "pipeline_risc_architecture.html",
     "title": "Pipeline RISC Architecture on FPGA",
-    "description": "This project involved the design of a 6-stage pipelined processor based on a provided instruction set architecture. The processor, a 16-bit computer, follows the Little Computer Architecture and is designed to optimize performance through hazard mitigation techniques like forwarding and branch prediction.",
+    "description": "This project designed a 6-stage pipelined processor based on a given architecture, optimizing a 16-bit computer with hazard mitigation techniques.",
     "keywords": [
       "RISC architecture",
       "FPGA",
@@ -310,7 +310,7 @@
   {
     "filename": "hysteresis_loop_modeling.html",
     "title": "Hysteresis Loop Modeling in Rolling and Transverse Direction of Grain Oriented Magnetic Material",
-    "description": "This paper presents a comprehensive approach for modeling dynamic hysteresis loops in rolling and transverse directions of grain-oriented magnetic materials, utilizing magnetic viscosity-based methods and loss separation schemes.",
+    "description": "This paper presents a method for modeling dynamic hysteresis loops in grain-oriented magnetic materials using magnetic viscosity and loss separation.",
     "keywords": [
       "hysteresis loop",
       "grain-oriented materials",
@@ -324,7 +324,7 @@
   {
     "filename": "image_stitching.html",
     "title": "Image Stitching for Arbitrary Camera Motion",
-    "description": "This project aims to stitch multiple images obtained from arbitrary camera motion into a single panorama. A set of seven images captured in a hostel room was used for demonstration.",
+    "description": "This project stitches multiple images from arbitrary camera motion into a panorama, demonstrated with seven images captured in a hostel room.",
     "keywords": [
       "image stitching",
       "panorama",
@@ -337,7 +337,7 @@
   {
     "filename": "hough_transform.html",
     "title": "Generalized Hough Transform",
-    "description": "This project extends the traditional Hough transform algorithm to detect arbitrary, non-parametric shapes with different scaling, using gradient information around the centroid of the shape.",
+    "description": "This project extends the Hough transform to detect arbitrary, non-parametric shapes with varying scales using gradient information.",
     "keywords": [
       "Hough transform",
       "shape detection",
@@ -350,7 +350,7 @@
   {
     "filename": "iitb_fyi.html",
     "title": "IITB Fresher's Toolkit",
-    "description": "A comprehensive guide for new students at IIT Bombay, covering email personalization, mail forwarding, software installation, and essential resources for academic success.",
+    "description": "A guide for new IIT Bombay students on email personalization, mail forwarding, software installation, and key academic resources.",
     "keywords": [
       "IIT Bombay",
       "fresher's toolkit",
@@ -364,7 +364,7 @@
   {
     "filename": "hobbies.html",
     "title": "Hobbies",
-    "description": "A collection of personal hobbies including photography, sketching, reading, playing musical instruments, and coin collecting.",
+    "description": "A collection of personal hobbies, including photography, sketching, reading, playing musical instruments, and coin collecting.",
     "keywords": [
       "hobbies",
       "photography",
