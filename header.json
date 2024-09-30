@@ -1,5 +1,21 @@
 [
   {
+    "filename": "eclipse_attack_detection_blockchain_network.html", 
+    "title": "Eclipse Attack Detection on a Blockchain Network",
+    "description": "A novel non-parametric change detection algorithm is introduced to detect eclipse attacks on a blockchain network. The algorithm relies on empirical mean and variance, utilizing the Johnson-Lindenstrauss lemma for dimensionality reduction and monitoring changes in Fréchet mean and variance to identify attacks. The detector can be implemented as a smart contract, offering a tamper-proof solution.",
+    "keywords": [
+      "eclipse attack",
+      "blockchain",
+      "non-parametric change detection",
+      "Fréchet mean",
+      "Johnson-Lindenstrauss lemma",
+      "smart contract",
+      "Brownian bridge",
+      "random forest model",
+      "network security"
+    ]
+  },
+  {
     "filename": "controlling_transaction_rate_tangle.html",
     "title": "Controlling Transaction Rate in Tangle Ledger: A Principal-Agent Approach",
     "description": "This paper introduces a principal-agent problem (PAP) framework to control transaction rates in Tangle, a directed acyclic graph-based distributed ledger. The proposed mechanism assigns proof of work (PoW) difficulty based on agents' computing power, enhancing security and moderating transaction rates. The framework solves a mixed-integer optimization problem, yielding optimal results that incentivize agents to perform challenging PoW and maintain a fair transaction rate across varying computing powers.",
