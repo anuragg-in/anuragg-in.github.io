@@ -32,21 +32,69 @@
 </ul>
 </div>
 <div class="docs-content">
-<h1>Eclipse Attack Detection on a Blockchain Network</h1>
-<p>We introduce a novel non-parametric change detection algorithm to identify eclipse attacks on a blockchain network; the non-parametric algorithm relies only on the empirical mean and variance of the dataset, making it highly adaptable. An eclipse attack occurs when malicious actors isolate blockchain users, disrupting their ability to reach consensus with the broader network, thereby distorting their local copy of the ledger. To detect an eclipse attack, we monitor changes in the Fréchet mean and variance of the evolving blockchain communication network connecting blockchain users. First, we leverage the Johnson-Lindenstrauss lemma to project large-dimensional networks into a lower-dimensional space, preserving essential statistical properties. Subsequently, we employ a non-parametric change detection procedure, leading to a test statistic that converges weakly to a Brownian bridge process in the absence of an eclipse attack. This enables us to quantify the false alarm rate of the detector. Our detector can be implemented as a smart contract on the blockchain, offering a tamper-proof and reliable solution. Finally, we use numerical examples to compare the proposed eclipse attack detector with a detector based on the random forest model (RFM).</p>
-<h2>Results</h2>
-<figure><img src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_absent.png"/><figcaption>Test statistic  vs. time  in the absence of an eclipse attack on the blockchain network (100 simulations)</figcaption></figure>
-<figure><img src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_present.png"/><figcaption>Test statistic  vs. time  in the presence of an eclipse attack on the blockchain network (100 simulations)</figcaption></figure>
-<figure><img src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/roc_proposed.png"/><figcaption>ROC curve of the proposed eclipse attack detector for
+<h1>
+ Eclipse Attack Detection on a Blockchain Network
+</h1>
+<p>
+ We introduce a novel non-parametric change detection algorithm to identify eclipse attacks on a blockchain network; the non-parametric algorithm relies only on the empirical mean and variance of the dataset, making it highly adaptable. An eclipse attack occurs when malicious actors isolate blockchain users, disrupting their ability to reach consensus with the broader network, thereby distorting their local copy of the ledger. To detect an eclipse attack, we monitor changes in the Fréchet mean and variance of the evolving blockchain communication network connecting blockchain users. First, we leverage the Johnson-Lindenstrauss lemma to project large-dimensional networks into a lower-dimensional space, preserving essential statistical properties. Subsequently, we employ a non-parametric change detection procedure, leading to a test statistic that converges weakly to a Brownian bridge process in the absence of an eclipse attack. This enables us to quantify the false alarm rate of the detector. Our detector can be implemented as a smart contract on the blockchain, offering a tamper-proof and reliable solution. Finally, we use numerical examples to compare the proposed eclipse attack detector with a detector based on the random forest model (RFM).
+</p>
+<h2>
+ Results
+</h2>
+<figure>
+<img alt="Test statistic  vs. time  in the absence of an eclipse attack on the blockchain network (100 simulations)" src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_absent.png"/>
+<figcaption>
+  Test statistic  vs. time  in the absence of an eclipse attack on the blockchain network (100 simulations)
+ </figcaption>
+</figure>
+<figure>
+<img alt="Test statistic  vs. time  in the presence of an eclipse attack on the blockchain network (100 simulations)" src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_present.png"/>
+<figcaption>
+  Test statistic  vs. time  in the presence of an eclipse attack on the blockchain network (100 simulations)
+ </figcaption>
+</figure>
+<figure>
+<img alt="ROC curve of the proposed eclipse attack detector for
     various SNR values (10). As observed, the detector performs
-    well with noisy datasets.</figcaption></figure>
-<figure><img src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_absent_projection.png"/><figcaption>Comparison of the test statistic computed using original and projected adjacency matrices in the presence of an eclipse attack.</figcaption></figure>
-<figure><img src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_present_projection.png"/><figcaption>Comparison of the test statistic computed using original and projected adjacency matrices in the presence of an eclipse attack.</figcaption></figure>
-<figure><img src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/roc_proposed_rfm.png"/><figcaption>ROC curve of the proposed eclipse attack detector and the RFM based for a dataset. The proposed detector outperforms the RFM based detector when the false positive rate is high. Note that the RFM based detector requires a training dataset and is sensitive to a training dataset (See Appendix IV-G for a study on sensitivity of the RFM based detector to a training dataset). In contrast, the proposed detector did not require a training dataset.</figcaption></figure>
-<h2>Acknowledgement</h2>
-<p>I would like to thank Dr. Brian Sadler for providing valuable feedback during the summer internship.</p>
-<h2>Reference</h2>
-<p><a href="https://arxiv.org/abs/2404.00538">Eclipse Attack Detection on a Blockchain Network as a Non-Parametric Change Detection Problem</a></p>
+    well with noisy datasets." src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/roc_proposed.png"/>
+<figcaption>
+  ROC curve of the proposed eclipse attack detector for
+    various SNR values (10). As observed, the detector performs
+    well with noisy datasets.
+ </figcaption>
+</figure>
+<figure>
+<img alt="Comparison of the test statistic computed using original and projected adjacency matrices in the presence of an eclipse attack." src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_absent_projection.png"/>
+<figcaption>
+  Comparison of the test statistic computed using original and projected adjacency matrices in the presence of an eclipse attack.
+ </figcaption>
+</figure>
+<figure>
+<img alt="Comparison of the test statistic computed using original and projected adjacency matrices in the presence of an eclipse attack." src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/test_stat_vs_t_present_projection.png"/>
+<figcaption>
+  Comparison of the test statistic computed using original and projected adjacency matrices in the presence of an eclipse attack.
+ </figcaption>
+</figure>
+<figure>
+<img alt="ROC curve of the proposed eclipse attack detector and the RFM based for a dataset. The proposed detector outperforms the RFM based detector when the false positive rate is high. Note that the RFM based detector requires a training dataset and is sensitive to a training dataset (See Appendix IV-G for a study on sensitivity of the RFM based detector to a training dataset). In contrast, the proposed detector did not require a training dataset." src="https://www.anuragg.in/images/eclipse_attack_detection_blockchain_network/roc_proposed_rfm.png"/>
+<figcaption>
+  ROC curve of the proposed eclipse attack detector and the RFM based for a dataset. The proposed detector outperforms the RFM based detector when the false positive rate is high. Note that the RFM based detector requires a training dataset and is sensitive to a training dataset (See Appendix IV-G for a study on sensitivity of the RFM based detector to a training dataset). In contrast, the proposed detector did not require a training dataset.
+ </figcaption>
+</figure>
+<h2>
+ Acknowledgement
+</h2>
+<p>
+ I would like to thank Dr. Brian Sadler for providing valuable feedback during the summer internship.
+</p>
+<h2>
+ Reference
+</h2>
+<p>
+<a href="https://arxiv.org/abs/2404.00538">
+  Eclipse Attack Detection on a Blockchain Network as a Non-Parametric Change Detection Problem
+ </a>
+</p>
 <h2>Author</h2>
 <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
 </div>

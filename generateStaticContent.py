@@ -6,6 +6,23 @@ blog_base_folder = 'blog_base'  # Path to your blog_base folder
 output_folder = 'blog'           # Path to your output folder
 linkHeader = "https://www.anuragg.in/"
 
+def add_alt_to_images(html_content):
+    # Create a BeautifulSoup object
+    soup = BeautifulSoup(html_content, 'html.parser')
+
+    # Find all <figure> tags
+    for figure in soup.find_all('figure'):
+        img = figure.find('img')
+        figcaption = figure.find('figcaption')
+
+        # Check if both <img> and <figcaption> exist
+        if img and figcaption:
+            # Set the alt attribute of the <img> to the text of <figcaption>
+            img['alt'] = figcaption.text
+
+    # Return the modified HTML
+    return soup.prettify()
+
 # Function to read header information from a JSON file
 def read_headers_from_json(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -127,6 +144,8 @@ def generate_html(filename, input_filename, output_filename, indent_space=4):
 
     # Indent the modified body content
     indented_body = '\n'.join((' ' * indent_space) + line for line in modified_body_content.splitlines())
+
+    indented_body = add_alt_to_images(indented_body)
 
     # Define the full HTML structure
     full_html = f"""<!DOCTYPE html>

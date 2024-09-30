@@ -32,10 +32,16 @@
 </ul>
 </div>
 <div class="docs-content">
-<h1>Books</h1>
-<h2>Favourite lines</h2>
-<div id="favorite_lines"></div><script>
-    lines = new Array('There are things which must cause you to lose your reason or you have none to lose','Victor Frankl (Man\'s search for meaning)','Noah\'s feet don\'t touch the ground when his legs dangle over the edge of the bench, but his head reaches all the way to space, because he hasn\'t been alive long enough to allow anyone to keep his thoughts on Earth.','Fredrik Backman (And every morning the way home gets longer and longer)', 'Saeed is a poet, a terribly heartless poet. He won\'t slaughter a chicken with knife; he\'ll wring its neck, pluck its feathers and then make broth out of it. He will drink the broth, chew on the bones, then sit in a corner comfortably and write a poem about the chicken\'s demise, with tears in his eyes.','Saadat Hasan Manto','A couple of degrees behind your name could make all the difference, even if you can\'t put them down in right order.','Unidentified source','No bargaining unless you have a gun.','Some shop\'s reception','Wife and dog missing. Reward for dog.','The Judge (2014)');
+<h1>
+ Books
+</h1>
+<h2>
+ Favourite lines
+</h2>
+<div id="favorite_lines">
+</div>
+<script>
+ lines = new Array('There are things which must cause you to lose your reason or you have none to lose','Victor Frankl (Man\'s search for meaning)','Noah\'s feet don\'t touch the ground when his legs dangle over the edge of the bench, but his head reaches all the way to space, because he hasn\'t been alive long enough to allow anyone to keep his thoughts on Earth.','Fredrik Backman (And every morning the way home gets longer and longer)', 'Saeed is a poet, a terribly heartless poet. He won\'t slaughter a chicken with knife; he\'ll wring its neck, pluck its feathers and then make broth out of it. He will drink the broth, chew on the bones, then sit in a corner comfortably and write a poem about the chicken\'s demise, with tears in his eyes.','Saadat Hasan Manto','A couple of degrees behind your name could make all the difference, even if you can\'t put them down in right order.','Unidentified source','No bargaining unless you have a gun.','Some shop\'s reception','Wife and dog missing. Reward for dog.','The Judge (2014)');
     var x=document.getElementById('favorite_lines');
     var y='';
     for (i=0; i<lines.length; i=i+2)
@@ -43,17 +49,25 @@
     	y=y+"<div class='italic text'>\""+lines[i]+"\"</h2><div class='text'>- "+lines[i+1]+"</h2><br>";
     }
     x.innerHTML=y;
-    </script>
+</script>
 <hr/>
-<h2>Recommended books</h2><table>
+<h2>
+ Recommended books
+</h2>
+<table>
 <tr>
-<th>Title</th><th>Author</th>
+<th>
+   Title
+  </th>
+<th>
+   Author
+  </th>
 </tr>
 <tbody id="recommended_books">
 </tbody>
 </table>
 <script>
-    var x=document.getElementById('recommended_books');
+ var x=document.getElementById('recommended_books');
     var y='';
     var books = new Array("A man called Ove","Fredrik Backman","The book thief","Markus Zusak","For those who are lost","Julia Bryan Thomas","Counting by 7s","Holly Goldberg Sloan","Gone with the wind","Mitchell Margaret","Lincoln in the bardo","George Saunders","1984","George Orwell","And every morning the way home gets longer and longer","Fredrik Backman","Black flags: the rise of ISIS","Joby Warrick","Why God won't go away","Andrew B. Newberg","The God of small things","Arundhati Roy","Sideways stories from wayside school","Louis Sachar","The witch of Portobello","Paulo Coelho","Atonement","Ian McEwan","And the mountains echoed","Khaled Hosseni","When I'm gone","Emily Bleeker","The elephant whisperer","Anthony Lawrence");
     for (i=0;i<books.length;i=i+2)
@@ -61,10 +75,13 @@
     	y=y+"<tr><td>"+books[i]+"</td><td>"+books[i+1]+"</td></tr>";
     }
     x.innerHTML=y;
-    </script>
+</script>
 <br/>
 <p>
-    	For more, visit my <a href="https://www.goodreads.com/user/show/45523948-anurag">goodreads' profile page.</a>
+ For more, visit my
+ <a href="https://www.goodreads.com/user/show/45523948-anurag">
+  goodreads' profile page.
+ </a>
 </p>
 <h2>Author</h2>
 <p><a href="https://www.anuragg.in">Anurag Gupta</a> is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay.</p>
