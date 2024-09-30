@@ -42,7 +42,7 @@ def generate_sitemap():
         # List files in the directory (do not go into subdirectories)
         for filename in os.listdir(directory):
             if filename.endswith('.html'):
-                if(filename=='index'):
+                if(filename=='index.html'):
                     url_element = create_url_element('https://www.anuragg.in/')
                     urlset.append(url_element)
                 else:
