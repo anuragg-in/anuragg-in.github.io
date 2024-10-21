@@ -35,6 +35,19 @@
 <h1>
  Search Engine Optimization: Best Pracitces, Web Tools for Site Audit
 </h1>
+The algorithm for broadcasting content on social media is opaque and relies heavily on artificial intelligence. The aim is to increase engagement rather than disseminate information. Without access to this algorithm, broadcasting content on social media has become increasingly difficult.
+    Social media platforms favour sponsored content because of its monetary value. The flood of sponsored content obfuscates essential information.
+    Centralized institutions force social media owners to moderate and censor the content. The appeal process for censored content is lengthy and strenuous; it can lead to unfavourable outcomes in critical situations.
+    
+    A personal website can solve most of the abovementioned issues and provide a reliable platform for content delivery. While centralized institutions regulate the Internet, it is difficult to moderate and censor website content. Moderating content on social media is easy due to opaque algorithms. Blocking a domain to censor content can be quickly identified by users and increases the accountability of centralized institutions. It is essential to understand that centralized and decentralized technologies are not black and white but belong to a spectrum. On this spectrum, a platform controlled by an opaque social media algorithm is more centralized than hosting your website for content propagation.
+    
+    Creating quality content is essential both for social media and personal websites. What differentiates the two is the mechanism for broadcasting the content. Social media platforms handle content dissemination for the user, but posting on an individual webpage requires extra effort from the user. To reach the target audience, the content creator needs to enhance their website's visibility through search engines, as users primarily rely on search engines to search for specific information on the web. This blog will guide such creators in making their website (1) accessible to search engines for indexing and (2) improve ranking to be featured on top of search results. Indexing allows a search engine to populate its database and refine its search results. Ranking decides the order of the search results for a search query. Rank is equivalent to the reputation of a webpage. Building a reputation for a webpage is similar to building a reputation for yourself. One can improve the reputation of their webpage by making themselves known to others and asking others to give you a reference. Technically, this is known as building external backlinks.
+    
+    This blog primarily focuses on making your webpage accessible to search engines. Specifically:
+    What are meta tags and how to use them to summarize the content for search engines?
+    What are good coding practices for writing a website?
+    How do you inform search engines about new content?
+    What site audit tools are available to identify and correct errors?
 <h2>
  Head, Meta, OG, Twitter tags
 </h2>
@@ -44,7 +57,7 @@
    Specify a region for your site. This can affect site ranking in search results for location-dependent queries. Put in top so that it is processed before other information about page.
   </li>
 <li>
-   Canonical link to avoid duplicate content by crawler. For e.g. https://www.anuragg.in/ and https://www.anuragg.in/index.html are duplicate contents. Put this after meta tags but before open graph tags.
+   Canonical link to avoid duplicate content by crawler. For e.g. https://www.anuragg.in/ and https://www.anuragg.in/index.html are duplicate contents. Put this after meta tags but before open graph tags. Otherwise, the page can be excluded from search results because it belongs to a secondary mirror of the site.
   </li>
 <li>
    A general recommendation is to keep your page description between 110 and 160 characters, although Google can sometimes show longer snippets.
@@ -54,6 +67,9 @@
   </li>
 <li>
    Specify language of the content.
+  </li>
+<li>
+   Favicon: A favicon is a small image that is displayed in a snippet in search results, next to the site address in the browser address bar, near the site name in Favorites or in browser Bookmarks. A favicon makes it easier for the user to find your site in search results and among browser tabs, which speeds up the work with the site and simplifies the process of returning to it.
   </li>
 </ul>
 </p>
@@ -67,10 +83,32 @@
   </li>
 <ul>
 <li>
-    One and only h1 tag should be used.
+    Title length should be between 50 to 60 characters. Reference: https://moz.com/learn/seo/title-tag
+   </li>
+<li>
+    Having duplicated title tag values can negatively impact a website’s SEO performance. Title tags are HTML elements that define the title of a web page and summarize its contents. They are important for both search engines and users, as they help search engines understand the content of the page and help users decide whether to click on the page in search results.
+    <br/>
+    When multiple pages on a website have the same title tag, it can create confusion for both search engines and users. Search engines may have difficulty determining which page is the most relevant for a given query, and users may have difficulty distinguishing between pages in search results. This can result in lower click-through rates, reduced traffic, and lower search engine rankings.
+    <br/>
+    To avoid these issues, it is important to ensure that each page on a website has a unique, descriptive title tag that accurately reflects the content of the page. This can help improve the website’s SEO performance and provide a better user experience for visitor.
+   </li>
+<li>
+    Meta description. 50-160 characters. Reference: https://moz.com/learn/seo/meta-description
+   </li>
+<li>
+    One and only h1 tag should be used. Ideally less than 60 characters, no technical limit. Reference: https://moz.com/learn/seo/h1-tags
    </li>
 <li>
     Add full link inlcuding https/http and not relative links. This is required for crawlability.
+   </li>
+<li>
+    Use .htaccess to rewrite url. This will be useful if you migrate from .html to .php in the future. You won't have to add a redirect rule in .htaccess. Redirect is not favored by search engines.
+   </li>
+<li>
+    Proper anchor text for links. External link to authoratitive domains can improve SEO. Spammy external links to low quality sources will have negative consequence.
+   </li>
+<li>
+    noscript tag for crawlers.
    </li>
 </ul>
 <li>
@@ -109,7 +147,13 @@
     Create IndexNow for each search engines.
    </li>
 <li>
+    Expand your site traffic by distributing contents to Bing, Edge, Windows, Office &amp; Dynamics. Refer to their guidelines on https://www.bing.com/webmasters/help/pubhub-publisher-guidelines-32ce5239
+   </li>
+<li>
     Set up business profile on google, yandex (need to upload YML file also), bing. Register your company for authenticity.
+   </li>
+<li>
+    SEM: Search Engine Marketing
    </li>
 </ul>
 </ul>
@@ -134,6 +178,9 @@
    </li>
 <li>
     Check website's mobile compatibility on yandex webmaster.
+   </li>
+<li>
+    Yandex server response
    </li>
 </ul>
 <li>
@@ -163,6 +210,22 @@
     Virtualmin
    </a>
 </li>
+</ul>
+</p>
+<h2>
+ Monetizing websites
+</h2>
+<p>
+<ul>
+<li>
+   Google adsense.
+  </li>
+<li>
+   Yandex turbo page.
+  </li>
+<li>
+   Contact companies relevant to your content and ask for sponsorship.
+  </li>
 </ul>
 </p>
 <h2>Author</h2>
