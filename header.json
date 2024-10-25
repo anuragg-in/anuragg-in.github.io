@@ -1,5 +1,28 @@
 [
   {
+    "filename": "automating_website_content.html",
+    "title": "Automating Website Content: A Comparison between Client-Side and Server-Side Automation",
+    "description": "This article compares client-side and server-side automation techniques for website content. It covers the roles of search engines and crawlers, client-side automation using JavaScript, and server-side automation using PHP. The discussion includes considerations for making content discoverable by search engines and techniques for optimizing media delivery.",
+    "keywords": [
+      "website automation",
+      "client-side automation",
+      "server-side automation",
+      "JavaScript",
+      "PHP",
+      "search engines",
+      "crawlers",
+      "web content generation",
+      "SEO",
+      "crawler-friendly websites",
+      "lazy loading",
+      "DASH video streaming",
+      "HTML",
+      "CSS",
+      "pre-rendering",
+      "web design"
+    ]
+  },
+  {
       "filename": "search_engine_optimization.html",
       "title": "Search Engine Optimization: Best Practices",
       "description": "Discover essential SEO practices, web tools, and tips for optimizing your site, ensuring crawlability, and enhancing user engagement.",
