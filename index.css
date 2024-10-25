@@ -108,9 +108,9 @@ h1
 {
     max-width: 25%;
 }
-.image img
+img
 {
-	max-width: 90%;
+	max-width: 500px;
 }
 .image-border
 {
