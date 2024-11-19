@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 blog_base_folder = 'blog_base'  # Path to your blog_base folder
 output_folder = 'blog'           # Path to your output folder
-linkHeader = "https://www.anuragg.in/"
+linkHeader = "https://soln.tech/"
 
 def add_alt_to_images(html_content):
     # Create a BeautifulSoup object
@@ -154,22 +154,22 @@ def generate_html(filename, input_filename, output_filename, indent_space=4):
     <meta charset='UTF-8'/>
     <meta name='geo.region' content='IN-DL'/>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-    <title>Anurag Gupta|Cornell University|IIT Bombay</title>
+    <title>Soln.Tech</title>
 
-    <meta name="keywords" content="Anurag Gupta, Master of Science, MS, Master of Technology, M.Tech, Bachelor of Technology, B.Tech, Electrical Engineering, EE, Systems and Control Engineering, SC, SysCon, Electrical and Computer Engineering, Indian Institute of Technology Bombay, Cornell University, Travel, Eco-Tourism, Minimalist"/>
+    <meta name="keywords" content="technology, solutions, education, research, ideas,Generating Website Content with Scripts,Search Engine Optimization,Free Website Hosting on Github with Customized Domain,shape formation using kilobots,Eclipse Attack Detection on a Blockchain Network,Controlling Transaction Rate in Tangle Ledger,Flyback Converter,Shared Economy for Battery Storage,SVM using Log Barrier Method,Stereovision using Multiple Images,Data Acquisition System for Epstein Tester,Image Stitching for Arbitrary Camera Motion,Hysteresis Loop Modeling in Grain Oriented Magnetic Material,Shape Detection using Generalized Hough Transform,Testing of digital circuits using Beaglebone Black,Pipeline RISC Architecture on FPGA,Measurement of Connectivity in Nanowire Network,Classification of Image Features for Remote Sensing"/>
     <meta name="description" content="Anurag Gupta holds an M.S. in Electrical and Computer Engineering from Cornell, an M.Tech in Systems and Control, and a B.Tech from IIT Bombay. Eco-tourism advocate."/>
     <meta name="author" content="Anurag Gupta"/>
 
-    <meta property="og:title" content="Anurag Gupta | Cornell University | IIT Bombay"/>
-    <meta property="og:type" content="Personal website"/>
-    <meta property="og:url" content="http://www.anuragg.in"/>
+    <meta property="og:title" content="Technology & Solutions"/>
+    <meta property="og:type" content="Website"/>
+    <meta property="og:url" content="http://soln.tech"/>
     <meta property="og:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living."/>
-    <meta property="og:image" content="images/anurag.png"/>
-    <meta property="og:site_name" content="Anurag Gupta"/>
+    <meta property="og:image" content="https://soln.tech/assets/img/logo.png"/>
+    <meta property="og:site_name" content="Technology & Solutions"/>
 
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="images/anurag.png"/>
-    <meta name="twitter:title" content="Anurag Gupta | Cornell University | Indian Institute of Technology Bombay"/>
+    <meta name="twitter:image" content="https://soln.tech/assets/img/logo.png"/>
+    <meta name="twitter:title" content="Technology & Solutions"/>
     <meta name="twitter:description" content="Anurag Gupta is an M.S. graduate in Electrical and Computer Engineering from Cornell University. He also holds an M.Tech degree in Systems and Control Engineering and a B.Tech degree in Electrical Engineering from the Indian Institute of Technology, Bombay. He is a passionate traveller and advocate of eco-tourism and sustainable living."/>
 
     <link rel='stylesheet' href='blog.css'/>
@@ -180,7 +180,7 @@ def generate_html(filename, input_filename, output_filename, indent_space=4):
   <div class="docs-nav-container">
     <ul class="docs-nav">
       <li>
-        <a href='https://www.anuragg.in'><strong>Home</strong></a>
+        <a href='https://soln.tech'><strong>Home</strong></a>
       </li>
     </ul>
   </div>
